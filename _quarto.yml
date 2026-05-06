@@ -1,0 +1,11 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Open Wildlife Workshop"
+
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
