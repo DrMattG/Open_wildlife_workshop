@@ -14,7 +14,6 @@ bibliography: bib_example2.bib
 - Toilets
 - Lunch & Coffee
 
-
 ## Today is practical and hands-on
 
 We will explore:
@@ -41,8 +40,9 @@ Build workflows that are:
 
 - Easier to collaborate on
 
-
 ## Introduction [^1]
+
+[^1]: [Some of the following slides are adapted from Erlend Nilsen's Into to OS](https://github.com/Open-Science-Course/OS-training-material/tree/main/introduction_OS)
 
 ::: {.callout-tip appearance="simple"}
 *Open science is just science done the way science should be done....*
@@ -56,8 +56,6 @@ Build workflows that are:
 (i.e. - what we call open science today will in the future just be "science"....)
 :::
 
-[^1]: [Some of the following slides are adapted from Erlend Nilsen's Into to OS](https://github.com/Open-Science-Course/OS-training-material/tree/main/introduction_OS)
-
 ## Open Science is an umbrella term
 
 ![](images/Figur1.png)
@@ -66,22 +64,21 @@ Build workflows that are:
 
 ![](images/Why_Open_Science.png){fig-align="center"}
 
-
 ## The six principles of open science
 
 ::::: columns
 ::: {.column width="50%"}
--   Open methodology
+- Open methodology
 
--   Open source
+- Open source
 
--   Open data
+- Open data
 
--   Open access
+- Open access
 
--   Open peer review
+- Open peer review
 
--   Open educational resources
+- Open educational resources
 :::
 
 ::: {.column width="50%"}
@@ -94,15 +91,15 @@ Build workflows that are:
 :::::: columns
 :::: {.column width="50%"}
 ::: {.callout-note appearance="simple"}
--   The *infrastructure school* (better infastructure leads to better science)
+- The *infrastructure school* (better infrastructure -\>better science)
 
--   The *public school* (Science should engage with society)
+- The *public school* (Science engage with society)
 
--   The *measurement school* (Alternative measures of research impact - not H-index etc.)
+- The *measurement school* (Alt. measures of impact )
 
--   The *democratic school* (knowledge should be free to all)
+- The *democratic school* (knowledge free to all)
 
--   The *pragmatic school* (Openness improves the efficency and quality of research)
+- The *pragmatic school* (Openness improves efficiency and quality)
 
 See @Fecher2014
 :::
@@ -116,9 +113,9 @@ See @Fecher2014
 ## Topics for discussion
 
 ::: {.callout-caution appearance="simple"}
--   *What do YOU associate with Open Science?*
+- *What do YOU associate with Open Science?*
 
--   *How do you think Open Science can improve your project?*
+- *How do you think Open Science can improve your project?*
 :::
 
 ## The reproduciblity crisis
@@ -139,21 +136,17 @@ See @Fecher2014
 
 ![](images/Figur5.png)
 
-
-##
-
+## 
 
 ::: {.callout-warning appearance="simple"}
--   When we publish scientific papers it is expected that data is shared (archived) publicly (so that other researchers can reuse the data)
+- When we publish scientific papers it is expected that data is shared (archived) publicly (so that other researchers can reuse the data)
 
--   However, currently we often find that this is not happening
+- However, currently we often find that this is not happening
 
-    -   See e.g. @Archmiller2020
+  - See e.g. @Archmiller2020
 :::
 
-
-
-##
+## 
 
 ![](images/Primary_biodiv_data.png)
 
@@ -161,22 +154,21 @@ See @Mandeville2021 for details
 
 ## Access to code
 
-::::::: columns
-:::: {.column width="50%"}
+:::::: columns
+::: {.column width="50%"}
 ![](images/Figur_code.png)
-
-::::
+:::
 
 :::: {.column width="50%"}
 ::: {.callout-warning appearance="simple"}
--   When we publish scientific papers - we are expected to share (archive) R-code (or other code we are using to produce the reported results).
+- When we publish scientific papers - we are expected to share (archive) R-code (or other code we are using to produce the reported results).
 
--   Again - there is room for improvement!
+- Again - there is room for improvement!
 
-    -   See e.g. @Culina2020
+  - See e.g. @Culina2020
 :::
 ::::
-:::::::
+::::::
 
 ## FAIR!
 

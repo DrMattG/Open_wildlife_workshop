@@ -1,0 +1,7 @@
+variable,description
+site,Survey site identifier
+species,Observed species
+habitat,Habitat type
+year,Survey year
+count,Number of observations
+observer,Observer name

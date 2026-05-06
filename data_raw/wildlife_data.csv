@@ -1,0 +1,121 @@
+site,species,habitat,year,count,observer
+Site_C,Brown bear,Wetland,2023,4,Carla
+Site_C,Moose,Wetland,2024,2,Alice
+Site_J,Brown bear,Forest,2024,1,Alice
+Site_B,Moose,Agricultural,2025,6,David
+Site_F,Red fox,Mountain,2025,1,Ben
+Site_E,Brown bear,Forest,2023,3,David
+Site_D,Red fox,Forest,2024,1,David
+Site_F,Lynx,Wetland,2024,0,Carla
+Site_I,Brown bear,Forest,2025,3,David
+Site_J,Brown bear,Wetland,2025,1,Alice
+Site_E,Brown bear,Wetland,2025,2,David
+Site_C,Moose,Wetland,2025,2,Alice
+Site_I,Roe deer,Wetland,2024,3,Carla
+Site_I,Red fox,Mountain,2023,4,Alice
+Site_I,Brown bear,Mountain,2023,2,David
+Site_C,Red fox,Mountain,2025,3,Ben
+Site_H,Moose,Mountain,2023,3,Ben
+Site_J,Lynx,Agricultural,2024,4,Carla
+Site_G,Lynx,Mountain,2024,4,Alice
+Site_J,Roe deer,Agricultural,2025,5,David
+Site_I,Red fox,Agricultural,2024,5,David
+Site_C,Lynx,Agricultural,2023,6,Carla
+Site_D,Moose,Forest,2025,3,Alice
+Site_A,Brown bear,Agricultural,2023,NA,Carla
+Site_G,Roe deer,Agricultural,2023,1,Carla
+Site_E,Brown bear,Agricultural,2025,3,Alice
+Site_J,Lynx,Mountain,2024,2,Carla
+Site_G,Lynx,Wetland,2023,0,Carla
+Site_I,Lynx,Agricultural,2023,3,Carla
+Site_I,Lynx,Agricultural,2024,3,Carla
+Site_J,Moose,Agricultural,2024,1,Carla
+Site_G,Roe deer,Forest,2024,2,Ben
+Site_E,Moose,Forest,2024,3,Carla
+Site_G,Roe deer,Agricultural,2023,1,Ben
+Site_E,Lynx,Wetland,2025,1,Carla
+Site_F,Lynx,Agricultural,2025,3,David
+Site_I,Moose,Wetland,2024,2,Ben
+Site_B,Roe deer,Forest,2025,5,Alice
+Site_E,Lynx,Mountain,2025,2,David
+Site_H,Brown bear,Wetland,2025,0,David
+Site_B,Roe deer,Wetland,2024,5,Alice
+Site_A,Roe deer,Wetland,2025,2,Carla
+Site_I,Red fox,Mountain,2025,3,David
+Site_I,Moose,Forest,2024,3,David
+Site_F,Moose,Mountain,2024,2,Alice
+Site_E,Lynx,Forest,2025,1,Ben
+Site_I,Lynx,Forest,2024,3,Alice
+Site_J,Red fox,Agricultural,2025,3,Ben
+Site_D,Roe deer,Agricultural,2024,3,David
+Site_F,Lynx,Forest,2024,4,Ben
+Site_H,Lynx,Forest,2023,4,Alice
+Site_F,Red fox,Agricultural,2024,3,Alice
+Site_F,Red fox,Forest,2025,2,David
+Site_G,Moose,Agricultural,2023,0,Ben
+Site_A,Brown bear,Mountain,2023,0,David
+Site_F,Roe deer,Wetland,2025,8,Carla
+Site_B,Moose,Forest,2024,1,Alice
+Site_A,Roe deer,Forest,2023,2,Ben
+Site_B,Brown bear,Agricultural,2023,4,Alice
+Site_D,Lynx,Mountain,2025,4,David
+Site_E,Moose,Wetland,2025,5,David
+Site_F,Moose,Agricultural,2025,3,Ben
+Site_C,Moose,Wetland,2023,4,David
+Site_I,Lynx,Forest,2024,5,Carla
+Site_D,Red fox,Wetland,2024,3,Ben
+Site_F,Moose,Agricultural,2025,4,Ben
+Site_I,Roe deer,Wetland,2025,NA,Carla
+Site_I,Roe deer,Agricultural,2025,NA,Alice
+Site_G,Moose,Agricultural,2025,5,Ben
+Site_C,Roe deer,Forest,2024,4,David
+Site_H,Moose,Wetland,2023,6,Carla
+Site_I,Lynx,Mountain,2025,1,Carla
+Site_C,Roe deer,Forest,2024,2,Alice
+Site_G,Red fox,Wetland,2023,4,Carla
+Site_C,Lynx,Wetland,2025,8,Alice
+Site_G,Brown bear,Mountain,2025,2,Alice
+Site_F,Lynx,Wetland,2025,0,Carla
+Site_J,Roe deer,Mountain,2024,8,Alice
+Site_E,Moose,Wetland,2023,1,Alice
+Site_E,Brown bear,Forest,2024,0,Carla
+Site_H,Roe deer,Mountain,2025,3,David
+Site_C,Lynx,Wetland,2023,2,Alice
+Site_J,Moose,Mountain,2024,3,Alice
+Site_B,Lynx,Forest,2023,4,Alice
+Site_J,Moose,Mountain,2024,1,David
+Site_B,Brown bear,Wetland,2024,4,David
+Site_J,Red fox,Forest,2025,6,David
+Site_F,Moose,Mountain,2024,2,Ben
+Site_D,Moose,Mountain,2024,2,Ben
+Site_A,Roe deer,Agricultural,2024,1,Ben
+Site_F,Brown bear,Wetland,2024,1,David
+Site_C,Roe deer,Forest,2024,3,Ben
+Site_H,Moose,Agricultural,2025,3,Carla
+Site_C,Lynx,Wetland,2023,3,Carla
+Site_H,Lynx,Mountain,2023,5,Ben
+Site_A,Moose,Agricultural,2025,0,David
+Site_G,Moose,Wetland,2025,2,Alice
+Site_G,Lynx,Agricultural,2025,3,David
+Site_G,Lynx,Agricultural,2025,2,Carla
+Site_J,Roe deer,Forest,2024,3,Alice
+Site_F,Roe deer,Mountain,2023,NA,Carla
+Site_G,Lynx,Wetland,2023,NA,Carla
+Site_J,Moose,Agricultural,2025,1,Carla
+Site_E,Moose,Forest,2024,1,Alice
+Site_F,Lynx,Forest,2024,2,David
+Site_H,Lynx,Agricultural,2025,4,Ben
+Site_E,Brown bear,Wetland,2023,4,Carla
+Site_G,Lynx,Agricultural,2025,5,Carla
+Site_D,Lynx,Wetland,2025,4,David
+Site_C,Brown bear,Wetland,2023,4,David
+Site_I,Roe deer,Wetland,2023,4,Alice
+Site_G,Lynx,Mountain,2025,1,Alice
+Site_F,Moose,Forest,2025,2,Alice
+Site_J,Moose,Mountain,2024,2,David
+Site_I,Roe deer,Wetland,2024,2,Carla
+Site_G,Moose,Forest,2025,3,Carla
+Site_B,Roe deer,Mountain,2024,4,David
+Site_C,Lynx,Mountain,2025,2,David
+Site_H,Moose,Forest,2025,5,David
+Site_D,Red fox,Mountain,2024,0,Alice
