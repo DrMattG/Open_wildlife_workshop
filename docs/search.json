@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
+    "section": "",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "index.html#sessions",
+    "href": "index.html#sessions",
+    "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
+    "section": "",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "slides/1_welcome.html#house-keeping",
+    "href": "slides/1_welcome.html#house-keeping",
+    "title": "Welcome",
+    "section": "House keeping",
+    "text": "House keeping\n\nFire exits\nToilets\nLunch & Coffee"
+  },
+  {
+    "objectID": "slides/1_welcome.html#today-is-practical-and-hands-on",
+    "href": "slides/1_welcome.html#today-is-practical-and-hands-on",
+    "title": "Welcome",
+    "section": "Today is practical and hands-on",
+    "text": "Today is practical and hands-on\nWe will explore:\n\nWhy reproducibility matters in ecology\nHow open workflows improve collaboration\nGitHub + R + Quarto workflows\nSharing code, data, and outputs\nReal examples from wildlife research"
+  },
+  {
+    "objectID": "slides/1_welcome.html#goal",
+    "href": "slides/1_welcome.html#goal",
+    "title": "Welcome",
+    "section": "Goal",
+    "text": "Goal\nBuild workflows that are:\n\nTransparent\nReusable\nEasier to maintain\nEasier to collaborate on"
+  },
+  {
+    "objectID": "slides/1_welcome.html#introduction-1",
+    "href": "slides/1_welcome.html#introduction-1",
+    "title": "Welcome",
+    "section": "Introduction 1",
+    "text": "Introduction 1\n\n\n\n\n\n\nOpen science is just science done the way science should be done….\n\n\n\nOR\n\n\n\n\n\n\nIn the future there will be science and closed science\n(i.e. - what we call open science today will in the future just be “science”….)\n\n\n\nSome of the following slides are adapted from Erlend Nilsen’s Into to OS"
+  },
+  {
+    "objectID": "slides/1_welcome.html#open-science-is-an-umbrella-term",
+    "href": "slides/1_welcome.html#open-science-is-an-umbrella-term",
+    "title": "Welcome",
+    "section": "Open Science is an umbrella term",
+    "text": "Open Science is an umbrella term"
+  },
+  {
+    "objectID": "slides/1_welcome.html#but-why-bother",
+    "href": "slides/1_welcome.html#but-why-bother",
+    "title": "Welcome",
+    "section": "But why bother?",
+    "text": "But why bother?"
+  },
+  {
+    "objectID": "slides/1_welcome.html#the-six-principles-of-open-science",
+    "href": "slides/1_welcome.html#the-six-principles-of-open-science",
+    "title": "Welcome",
+    "section": "The six principles of open science",
+    "text": "The six principles of open science\n\n\n\nOpen methodology\nOpen source\nOpen data\nOpen access\nOpen peer review\nOpen educational resources"
+  },
+  {
+    "objectID": "slides/1_welcome.html#different-schools-of-open-science",
+    "href": "slides/1_welcome.html#different-schools-of-open-science",
+    "title": "Welcome",
+    "section": "Different schools of open science",
+    "text": "Different schools of open science\n\n\n\n\n\n\n\n\n\nThe infrastructure school (better infastructure leads to better science)\nThe public school (Science should engage with society)\nThe measurement school (Alternative measures of research impact - not H-index etc.)\nThe democratic school (knowledge should be free to all)\nThe pragmatic school (Openness improves the efficency and quality of research)\n\nSee Fecher and Friesike (2014)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#topics-for-discussion",
+    "href": "slides/1_welcome.html#topics-for-discussion",
+    "title": "Welcome",
+    "section": "Topics for discussion",
+    "text": "Topics for discussion\n\n\n\n\n\n\n\nWhat do YOU associate with Open Science?\nHow do you think Open Science can improve your project?"
+  },
+  {
+    "objectID": "slides/1_welcome.html#the-reproduciblity-crisis",
+    "href": "slides/1_welcome.html#the-reproduciblity-crisis",
+    "title": "Welcome",
+    "section": "The reproduciblity crisis",
+    "text": "The reproduciblity crisis\n\n\n\n\n\n\n1,500 scientists lift the lid on reproducibility | Nature"
+  },
+  {
+    "objectID": "slides/1_welcome.html#access-to-data",
+    "href": "slides/1_welcome.html#access-to-data",
+    "title": "Welcome",
+    "section": "Access to data",
+    "text": "Access to data"
+  },
+  {
+    "objectID": "slides/1_welcome.html#section",
+    "href": "slides/1_welcome.html#section",
+    "title": "Welcome",
+    "section": "",
+    "text": "When we publish scientific papers it is expected that data is shared (archived) publicly (so that other researchers can reuse the data)\nHowever, currently we often find that this is not happening\n\nSee e.g. Archmiller et al. (2020)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#section-1",
+    "href": "slides/1_welcome.html#section-1",
+    "title": "Welcome",
+    "section": "",
+    "text": "See Mandeville et al. (2021) for details"
+  },
+  {
+    "objectID": "slides/1_welcome.html#access-to-code",
+    "href": "slides/1_welcome.html#access-to-code",
+    "title": "Welcome",
+    "section": "Access to code",
+    "text": "Access to code\n\n\n\n\n\n\n\n\n\n\n\nWhen we publish scientific papers - we are expected to share (archive) R-code (or other code we are using to produce the reported results).\nAgain - there is room for improvement!\n\nSee e.g. Culina et al. (2020)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#fair",
+    "href": "slides/1_welcome.html#fair",
+    "title": "Welcome",
+    "section": "FAIR!",
+    "text": "FAIR!\n\nSee Wilkinson et al. (2016)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#questionable-research-practices",
+    "href": "slides/1_welcome.html#questionable-research-practices",
+    "title": "Welcome",
+    "section": "Questionable Research Practices",
+    "text": "Questionable Research Practices\n\nSee Fraser et al. (2018) for details and further discussion!"
+  },
+  {
+    "objectID": "slides/1_welcome.html#the-preregistration-revolution",
+    "href": "slides/1_welcome.html#the-preregistration-revolution",
+    "title": "Welcome",
+    "section": "The preregistration revolution!",
+    "text": "The preregistration revolution!\n\n\n\n\n\nSee Nosek et al. (2018)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#distinguish-between-exploratory-and-confirmatory-science",
+    "href": "slides/1_welcome.html#distinguish-between-exploratory-and-confirmatory-science",
+    "title": "Welcome",
+    "section": "Distinguish between exploratory and confirmatory science",
+    "text": "Distinguish between exploratory and confirmatory science\n\n\n\n\n\n\nSee Nilsen et al. (2020)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#open-science-is-just-as-much-about.",
+    "href": "slides/1_welcome.html#open-science-is-just-as-much-about.",
+    "title": "Welcome",
+    "section": "Open science is just as much about….",
+    "text": "Open science is just as much about…."
+  },
+  {
+    "objectID": "slides/1_welcome.html#references",
+    "href": "slides/1_welcome.html#references",
+    "title": "Welcome",
+    "section": "References",
+    "text": "References\n\n\n\n\nArchmiller, Althea A., Andrew D. Johnson, Jane Nolan, et al. 2020. “Computational Reproducibility in the Wildlife Society’s Flagship Journals.” The Journal of Wildlife Management 84 (5): 1012–17. https://doi.org/10.1002/jwmg.21855.\n\n\nCulina, Antica, Ilona van den Berg, Simon Evans, and Alfredo Sánchez-Tójar. 2020. “Low Availability of Code in Ecology: A Call for Urgent Action.” PLOS Biology 18 (7): 1–9. https://doi.org/10.1371/journal.pbio.3000763.\n\n\nFecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly Publishing, edited by Sönke Bartling and Sascha Friesike. Springer. https://doi.org/10.1007/978-3-319-00026-8_2.\n\n\nFraser, Hannah, Tim Parker, Shinichi Nakagawa, Ashley Barnett, and Fiona Fidler. 2018. “Questionable Research Practices in Ecology and Evolution.” PLOS ONE 13 (7): 1–16. https://doi.org/10.1371/journal.pone.0200303.\n\n\nMandeville, Caitlin P., Wouter Koch, Erlend B. Nilsen, and Anders G. Finstad. 2021. “Open Data Practices Among Users of Primary Biodiversity Data.” BioScience 71 (11): 1128–47. https://doi.org/10.1093/biosci/biab072.\n\n\nNilsen, Erlend B., Diana E. Bowler, and John D. C. Linnell. 2020. “Exploratory and Confirmatory Research in the Open Science Era.” Journal of Applied Ecology 57 (4): 842–47. https://doi.org/10.1111/1365-2664.13571.\n\n\nNosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. “The Preregistration Revolution.” Proceedings of the National Academy of Sciences 115 (11): 2600–2606. https://doi.org/10.1073/pnas.1708274114.\n\n\nWilkinson, Mark D., Michel Dumontier, I. J. J. Aalbersberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018. https://doi.org/10.1038/sdata.2016.18."
+  }
+]
