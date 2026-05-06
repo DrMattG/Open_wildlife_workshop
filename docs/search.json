@@ -1,17 +1,248 @@
 [
   {
+    "objectID": "slides/2_reproducible_research.html#open-workflows-for-ecology-and-wildlife-research",
+    "href": "slides/2_reproducible_research.html#open-workflows-for-ecology-and-wildlife-research",
+    "title": "What Is a Reproducible Project?",
+    "section": "Open workflows for ecology and wildlife research",
+    "text": "Open workflows for ecology and wildlife research\nTopics:\n\nFolder structure\nRaw vs processed data\nScripts and automation\nDocumentation\nPortable workflows"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#learning-goals",
+    "href": "slides/2_reproducible_research.html#learning-goals",
+    "title": "What Is a Reproducible Project?",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nBy the end of this session you should be able to:\n\nRecognise the components of a reproducible project\nUnderstand why project structure matters\nSeparate raw and processed data safely\nOrganise scripts logically\nUse relative paths\nCreate a simple reproducible workflow in RStudio"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#does-this-look-familiar",
+    "href": "slides/2_reproducible_research.html#does-this-look-familiar",
+    "title": "What Is a Reproducible Project?",
+    "section": "Does this look familiar?",
+    "text": "Does this look familiar?\nDesktop/\n  analysis/\n    final_analysis.R\n    final_analysis_v2.R\n    final_analysis_v2_FINAL.R\n    final_analysis_v2_FINAL_REAL.R\n    figure_new_final.png\n    temp_data.csv\n    old_data.csv"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#common-problems",
+    "href": "slides/2_reproducible_research.html#common-problems",
+    "title": "What Is a Reproducible Project?",
+    "section": "Common problems",
+    "text": "Common problems\n\nWhich script is correct?\nWhich data were used?\nWhich figures belong to which analysis?\nCan another person rerun this?"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#reproducibility-is-not-just-about-publishing-code",
+    "href": "slides/2_reproducible_research.html#reproducibility-is-not-just-about-publishing-code",
+    "title": "What Is a Reproducible Project?",
+    "section": "Reproducibility Is Not Just About Publishing Code",
+    "text": "Reproducibility Is Not Just About Publishing Code\nReproducibility means:\nSomeone else can:\n\nOpen the project\nUnderstand the workflow\nRun the analysis\nRecreate the outputs"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#ideally-with-minimal-confusion",
+    "href": "slides/2_reproducible_research.html#ideally-with-minimal-confusion",
+    "title": "What Is a Reproducible Project?",
+    "section": "Ideally with minimal confusion",
+    "text": "Ideally with minimal confusion\nThis includes:\n\nData organisation\nDocumentation\nScripts\nDependencies\nFile structure"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#why-reproducibility-matters-in-ecology",
+    "href": "slides/2_reproducible_research.html#why-reproducibility-matters-in-ecology",
+    "title": "What Is a Reproducible Project?",
+    "section": "Why Reproducibility Matters in Ecology",
+    "text": "Why Reproducibility Matters in Ecology\nEcology workflows are often complex\nExamples:\n\nCamera trap datasets\nSpatial layers\nOccupancy models\nMeta-analysis workflows\nLong-term monitoring\nMulti-country collaborations"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#complexity-increases-risk",
+    "href": "slides/2_reproducible_research.html#complexity-increases-risk",
+    "title": "What Is a Reproducible Project?",
+    "section": "Complexity increases risk",
+    "text": "Complexity increases risk\nSmall workflow issues can make projects difficult to reproduce."
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#a-typical-reproducible-workflow",
+    "href": "slides/2_reproducible_research.html#a-typical-reproducible-workflow",
+    "title": "What Is a Reproducible Project?",
+    "section": "A typical reproducible workflow",
+    "text": "A typical reproducible workflow\nRaw data\n   ↓\nCleaning scripts\n   ↓\nProcessed data\n   ↓\nAnalysis scripts\n   ↓\nFigures and tables\n   ↓\nReports/manuscripts"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#core-components-of-a-reproducible-project",
+    "href": "slides/2_reproducible_research.html#core-components-of-a-reproducible-project",
+    "title": "What Is a Reproducible Project?",
+    "section": "Core components of a reproducible project",
+    "text": "Core components of a reproducible project\nA project usually contains:\n\nRaw data\nProcessed data\nScripts\nOutputs\nDocumentation\nMetadata\nA project file\n\nThe structure itself is part of the methodology."
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#example-project-structure",
+    "href": "slides/2_reproducible_research.html#example-project-structure",
+    "title": "What Is a Reproducible Project?",
+    "section": "Example project structure",
+    "text": "Example project structure\nmy_project/\n├── data_raw/\n├── data_processed/\n├── scripts/\n├── outputs/\n├── docs/\n├── README.md\n└── my_project.Rproj"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#benefits",
+    "href": "slides/2_reproducible_research.html#benefits",
+    "title": "What Is a Reproducible Project?",
+    "section": "Benefits",
+    "text": "Benefits\n\nEasier navigation\nEasier collaboration (even with your future self!)\nEasier automation\nEasier handover"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#raw-vs-processed-data",
+    "href": "slides/2_reproducible_research.html#raw-vs-processed-data",
+    "title": "What Is a Reproducible Project?",
+    "section": "Raw vs Processed Data",
+    "text": "Raw vs Processed Data\nNever manually edit raw data\nRaw data\n\nOriginal source files\nUntouched\nRead-only if possible\n\nProcessed data\n\nCleaned data\nDerived variables\nAnalysis-ready datasets"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#example-ecology-workflow",
+    "href": "slides/2_reproducible_research.html#example-ecology-workflow",
+    "title": "What Is a Reproducible Project?",
+    "section": "Example ecology workflow",
+    "text": "Example ecology workflow\ncamera_trap_data.csv\n        ↓\nclean_camera_data.R\n        ↓\ncamera_data_clean.csv\n        ↓\noccupancy_model.R\n        ↓\noccupancy_results.csv\n        ↓\nfigures/\nThe scripts explain exactly what happened."
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#scripts-are-better-than-manual-steps",
+    "href": "slides/2_reproducible_research.html#scripts-are-better-than-manual-steps",
+    "title": "What Is a Reproducible Project?",
+    "section": "Scripts Are Better Than Manual Steps",
+    "text": "Scripts Are Better Than Manual Steps\nManual workflows are fragile\nProblems with manual editing:\n\nDifficult to track changes\nEasy to introduce errors\nImpossible to reproduce precisely\nHard to scale"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#scripts-are-documentation",
+    "href": "slides/2_reproducible_research.html#scripts-are-documentation",
+    "title": "What Is a Reproducible Project?",
+    "section": "Scripts are documentation",
+    "text": "Scripts are documentation\nGood scripts explain:\n\nWhat was done\nWhy it was done\nIn what order"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#documentation-matters",
+    "href": "slides/2_reproducible_research.html#documentation-matters",
+    "title": "What Is a Reproducible Project?",
+    "section": "Documentation Matters",
+    "text": "Documentation Matters\nGood projects explain themselves\nMinimum documentation:\nA README.md should explain:\n\nWhat the project is\nWhere the data came from\nHow to run the analysis\nFolder structure\nRequired software/packages\n\nFuture-you will appreciate this."
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#relative-paths",
+    "href": "slides/2_reproducible_research.html#relative-paths",
+    "title": "What Is a Reproducible Project?",
+    "section": "Relative Paths",
+    "text": "Relative Paths\nAvoid absolute paths!\nBad\nread.csv(\"C:/Users/matt/Desktop/project/data.csv\")\nBetter\nread.csv(\"data_raw/data.csv\")\nEven better\nhere::here(\"data_raw\", \"data.csv\")"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#why-relative-paths-matter",
+    "href": "slides/2_reproducible_research.html#why-relative-paths-matter",
+    "title": "What Is a Reproducible Project?",
+    "section": "Why Relative Paths Matter",
+    "text": "Why Relative Paths Matter\nAbsolute paths break collaboration\nAbsolute paths:\n\nOnly work on your computer\nBreak when folders move\nCause problems across operating systems\n\nRelative paths:\n\nImprove portability\nImprove collaboration\nImprove reproducibility"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#by-biggest-bugbear",
+    "href": "slides/2_reproducible_research.html#by-biggest-bugbear",
+    "title": "What Is a Reproducible Project?",
+    "section": "By biggest bugbear",
+    "text": "By biggest bugbear"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#section",
+    "href": "slides/2_reproducible_research.html#section",
+    "title": "What Is a Reproducible Project?",
+    "section": "",
+    "text": "rm(list=ls())\n\nThis is just rude"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#gold-standard-reproduciblity",
+    "href": "slides/2_reproducible_research.html#gold-standard-reproduciblity",
+    "title": "What Is a Reproducible Project?",
+    "section": "Gold-standard reproduciblity",
+    "text": "Gold-standard reproduciblity\nRed Fox IPM"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#common-mistakes",
+    "href": "slides/2_reproducible_research.html#common-mistakes",
+    "title": "What Is a Reproducible Project?",
+    "section": "Common Mistakes",
+    "text": "Common Mistakes\n\nFiles on Desktop\nManual spreadsheet editing\nMissing scripts\nMissing metadata\nUnclear filenames\nMixing raw and processed data\nNo version control\nHard-coded paths"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#hands-on-exercise",
+    "href": "slides/2_reproducible_research.html#hands-on-exercise",
+    "title": "What Is a Reproducible Project?",
+    "section": "Hands-on exercise",
+    "text": "Hands-on exercise\nGoal\nBuild your first reproducible research project.\nYou will:\n\nCreate an RStudio project\nBuild a folder structure\nAdd a small dataset\nCreate a cleaning script\nGenerate a figure\nWrite a README"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#exercise-workflow",
+    "href": "slides/2_reproducible_research.html#exercise-workflow",
+    "title": "What Is a Reproducible Project?",
+    "section": "Exercise workflow",
+    "text": "Exercise workflow\nCreate project\n      ↓\nAdd folders\n      ↓\nImport raw data\n      ↓\nCreate cleaning script\n      ↓\nSave processed data\n      ↓\nCreate plot\n      ↓\nDocument project"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#step-1-create-a-project",
+    "href": "slides/2_reproducible_research.html#step-1-create-a-project",
+    "title": "What Is a Reproducible Project?",
+    "section": "Step 1 — Create a project",
+    "text": "Step 1 — Create a project\nIn RStudio:\n\nFile → New Project\nNew Directory\nNew Project\nName it:\n\nwildlife_reproducibility_project"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#step-2-create-folders",
+    "href": "slides/2_reproducible_research.html#step-2-create-folders",
+    "title": "What Is a Reproducible Project?",
+    "section": "Step 2 — Create folders",
+    "text": "Step 2 — Create folders\nCreate these folders:\n/data_raw\n/data_processed\n/scripts\n/outputs\n/docs\nOr create them using R:\nfolders &lt;- c(\n  \"data_raw\",\n  \"data_processed\",\n  \"scripts\",\n  \"outputs\",\n  \"docs\"\n)\n\nsapply(folders, dir.create)"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#step-3-add-raw-data",
+    "href": "slides/2_reproducible_research.html#step-3-add-raw-data",
+    "title": "What Is a Reproducible Project?",
+    "section": "Step 3 — Add raw data",
+    "text": "Step 3 — Add raw data\nDownload the workshop dataset from GitHub.\nSave it into:\n/data_raw"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#step-4-create-a-cleaning-script",
+    "href": "slides/2_reproducible_research.html#step-4-create-a-cleaning-script",
+    "title": "What Is a Reproducible Project?",
+    "section": "Step 4 — Create a cleaning script",
+    "text": "Step 4 — Create a cleaning script\nCreate:\nscripts/01_clean_data.R\nExample:\nlibrary(readr)\nlibrary(dplyr)\nwildlife &lt;- read_csv(\n  here::here(\"data_raw\", \"wildlife_data.csv\")\n)\n\nwildlife_clean &lt;- wildlife %&gt;%\n  filter(!is.na(count))\nwrite_csv(\n  wildlife_clean,\n  here::here(\"data_processed\", \"wildlife_clean.csv\")\n)"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#step-5-create-a-figure",
+    "href": "slides/2_reproducible_research.html#step-5-create-a-figure",
+    "title": "What Is a Reproducible Project?",
+    "section": "Step 5 — Create a figure",
+    "text": "Step 5 — Create a figure\nCreate:\nscripts/02_make_plot.R\nExample:\nlibrary(ggplot2)\nlibrary(readr)\n\nwildlife_clean &lt;- read_csv(\n  here::here(\"data_processed\", \"wildlife_clean.csv\")\n)\n\np &lt;- ggplot(wildlife_clean,\n            aes(x = habitat,\n                y = count)) +\n  geom_boxplot()\n\nggsave(\n  filename = here::here(\"outputs\", \"habitat_plot.png\"),\n  plot = p,\n  width = 6,\n  height = 4\n)"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#step-6-create-a-readme",
+    "href": "slides/2_reproducible_research.html#step-6-create-a-readme",
+    "title": "What Is a Reproducible Project?",
+    "section": "Step 6 — Create a README",
+    "text": "Step 6 — Create a README\nCreate:\nREADME.md\nInclude:\n\nProject title\nShort description\nFolder structure\nHow to run the analysis\nRequired packages\n\nKeep it simple"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#what-did-we-build",
+    "href": "slides/2_reproducible_research.html#what-did-we-build",
+    "title": "What Is a Reproducible Project?",
+    "section": "What did we build?",
+    "text": "What did we build?\nYou now have:\n\nA reproducible folder structure\nRaw and processed data separation\nDocumented scripts\nReproducible outputs\nBasic documentation"
+  },
+  {
+    "objectID": "slides/2_reproducible_research.html#useful-links",
+    "href": "slides/2_reproducible_research.html#useful-links",
+    "title": "What Is a Reproducible Project?",
+    "section": "Useful Links",
+    "text": "Useful Links\n\nQuarto\nThe Turing Way\nHappy Git with R\nhere package"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
     "section": "",
-    "text": "Introduction"
+    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear"
   },
   {
     "objectID": "index.html#sessions",
     "href": "index.html#sessions",
     "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
     "section": "",
-    "text": "Introduction"
+    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear"
   },
   {
     "objectID": "slides/1_welcome.html#house-keeping",
@@ -152,5 +383,292 @@
     "title": "Welcome",
     "section": "References",
     "text": "References\n\n\n\n\nArchmiller, Althea A., Andrew D. Johnson, Jane Nolan, et al. 2020. “Computational Reproducibility in the Wildlife Society’s Flagship Journals.” The Journal of Wildlife Management 84 (5): 1012–17. https://doi.org/10.1002/jwmg.21855.\n\n\nCulina, Antica, Ilona van den Berg, Simon Evans, and Alfredo Sánchez-Tójar. 2020. “Low Availability of Code in Ecology: A Call for Urgent Action.” PLOS Biology 18 (7): 1–9. https://doi.org/10.1371/journal.pbio.3000763.\n\n\nFecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly Publishing, edited by Sönke Bartling and Sascha Friesike. Springer. https://doi.org/10.1007/978-3-319-00026-8_2.\n\n\nFraser, Hannah, Tim Parker, Shinichi Nakagawa, Ashley Barnett, and Fiona Fidler. 2018. “Questionable Research Practices in Ecology and Evolution.” PLOS ONE 13 (7): 1–16. https://doi.org/10.1371/journal.pone.0200303.\n\n\nMandeville, Caitlin P., Wouter Koch, Erlend B. Nilsen, and Anders G. Finstad. 2021. “Open Data Practices Among Users of Primary Biodiversity Data.” BioScience 71 (11): 1128–47. https://doi.org/10.1093/biosci/biab072.\n\n\nNilsen, Erlend B., Diana E. Bowler, and John D. C. Linnell. 2020. “Exploratory and Confirmatory Research in the Open Science Era.” Journal of Applied Ecology 57 (4): 842–47. https://doi.org/10.1111/1365-2664.13571.\n\n\nNosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. “The Preregistration Revolution.” Proceedings of the National Academy of Sciences 115 (11): 2600–2606. https://doi.org/10.1073/pnas.1708274114.\n\n\nWilkinson, Mark D., Michel Dumontier, I. J. J. Aalbersberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018. https://doi.org/10.1038/sdata.2016.18."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
+    "href": "slides/3_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
+    "title": "GitHub without fear",
+    "section": "Open workflows for ecology and wildlife research",
+    "text": "Open workflows for ecology and wildlife research\nTopics:\n\nRepositories\nCommits\nPush/pull\nREADME files\nCollaboration\nVersion control basics"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#learning-goals",
+    "href": "slides/3_github_without_fear.html#learning-goals",
+    "title": "GitHub without fear",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nBy the end of this session you should be able to:\n\nUnderstand what Git and GitHub are\nCreate and clone repositories\nMake commits confidently\nPush and pull changes\nUnderstand basic collaboration workflows\nRecover from common mistakes\nUse GitHub in ecology research projects"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#what-problem-does-git-solve",
+    "href": "slides/3_github_without_fear.html#what-problem-does-git-solve",
+    "title": "GitHub without fear",
+    "section": "What Problem Does Git Solve?",
+    "text": "What Problem Does Git Solve?\nA familiar workflow problem\nanalysis_final.R\nanalysis_final_v2.R\nanalysis_final_v2_REAL.R\nanalysis_final_USE_THIS_ONE.R"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#common-issues",
+    "href": "slides/3_github_without_fear.html#common-issues",
+    "title": "GitHub without fear",
+    "section": "Common issues",
+    "text": "Common issues\n\nFiles overwritten\nUnsure what changed\nDifficult collaboration\nNo backup history\nImpossible to undo mistakes safely"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#git-is-not-github",
+    "href": "slides/3_github_without_fear.html#git-is-not-github",
+    "title": "GitHub without fear",
+    "section": "Git is not GitHub",
+    "text": "Git is not GitHub\nGit\n\nVersion control system\nTracks changes to files\nWorks locally on your computer\n\nGitHub\n\nOnline hosting platform for Git repositories\nCollaboration and sharing\nBackup and project management"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#version-control",
+    "href": "slides/3_github_without_fear.html#version-control",
+    "title": "GitHub without fear",
+    "section": "Version control",
+    "text": "Version control\nGit keeps a history of changes:\n\nWhat changed\nWhen it changed\nWho changed it\nWhy it changed"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#benefits",
+    "href": "slides/3_github_without_fear.html#benefits",
+    "title": "GitHub without fear",
+    "section": "Benefits",
+    "text": "Benefits\n\nUndo mistakes\nTrack project history\nCollaborate safely\nExperiment without fear"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#why-github-matters-in-ecology",
+    "href": "slides/3_github_without_fear.html#why-github-matters-in-ecology",
+    "title": "GitHub without fear",
+    "section": "Why GitHub Matters in Ecology",
+    "text": "Why GitHub Matters in Ecology"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#what-is-a-repository",
+    "href": "slides/3_github_without_fear.html#what-is-a-repository",
+    "title": "GitHub without fear",
+    "section": "What Is a Repository?",
+    "text": "What Is a Repository?"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#anatomy-of-a-repository",
+    "href": "slides/3_github_without_fear.html#anatomy-of-a-repository",
+    "title": "GitHub without fear",
+    "section": "Anatomy of a Repository",
+    "text": "Anatomy of a Repository\nExample repository structure\nwildlife_project/\n├── data_raw/\n├── data_processed/\n├── scripts/\n├── outputs/\n├── docs/\n├── README.md\n├── .gitignore\n└── wildlife_project.Rproj\nGit tracks changes inside the project."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#commits",
+    "href": "slides/3_github_without_fear.html#commits",
+    "title": "GitHub without fear",
+    "section": "Commits",
+    "text": "Commits\nCommits are snapshots\nA commit records:\n\nWhat changed\nWhen it changed\nA short explanation"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#good-commit-messages",
+    "href": "slides/3_github_without_fear.html#good-commit-messages",
+    "title": "GitHub without fear",
+    "section": "Good commit messages",
+    "text": "Good commit messages\nAdd cleaning script for camera trap data\nFix species names in processed dataset"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#bad-commit-messages",
+    "href": "slides/3_github_without_fear.html#bad-commit-messages",
+    "title": "GitHub without fear",
+    "section": "Bad commit messages",
+    "text": "Bad commit messages\nstuff\nasdfgh"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#important",
+    "href": "slides/3_github_without_fear.html#important",
+    "title": "GitHub without fear",
+    "section": "Important",
+    "text": "Important\nYou are always in control of what gets committed."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#push",
+    "href": "slides/3_github_without_fear.html#push",
+    "title": "GitHub without fear",
+    "section": "Push",
+    "text": "Push\nSend your local commits to GitHub."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#pull",
+    "href": "slides/3_github_without_fear.html#pull",
+    "title": "GitHub without fear",
+    "section": "Pull",
+    "text": "Pull\nDownload changes from GitHub."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#typical-workflow",
+    "href": "slides/3_github_without_fear.html#typical-workflow",
+    "title": "GitHub without fear",
+    "section": "Typical workflow",
+    "text": "Typical workflow\nPull\nWork\nCommit\nPush"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#many-ecology-projects-now-publish",
+    "href": "slides/3_github_without_fear.html#many-ecology-projects-now-publish",
+    "title": "GitHub without fear",
+    "section": "Many ecology projects now publish:",
+    "text": "Many ecology projects now publish:\n\nCode\nData\nReports\nWebsites"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#people-often-judge-projects-by-the-readme.",
+    "href": "slides/3_github_without_fear.html#people-often-judge-projects-by-the-readme.",
+    "title": "GitHub without fear",
+    "section": "People often judge projects by the README.",
+    "text": "People often judge projects by the README."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#keep-the-workflow-slow-and-visible.",
+    "href": "slides/3_github_without_fear.html#keep-the-workflow-slow-and-visible.",
+    "title": "GitHub without fear",
+    "section": "Keep the workflow slow and visible.",
+    "text": "Keep the workflow slow and visible."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#mistakes-are-normal.",
+    "href": "slides/3_github_without_fear.html#mistakes-are-normal.",
+    "title": "GitHub without fear",
+    "section": "Mistakes are normal.",
+    "text": "Mistakes are normal.\nEven experienced users regularly:\n\nCommit the wrong file\nMerge incorrectly\nForget to pull"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#today-we-focus-on",
+    "href": "slides/3_github_without_fear.html#today-we-focus-on",
+    "title": "GitHub without fear",
+    "section": "Today we focus on:",
+    "text": "Today we focus on:\n\nRepositories\nCommits\nPush/pull\nCollaboration basics"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#branches-come-later.",
+    "href": "slides/3_github_without_fear.html#branches-come-later.",
+    "title": "GitHub without fear",
+    "section": "Branches come later.",
+    "text": "Branches come later.\nYou do not need to master Git immediately."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#understanding-concepts-matters-more-than-memorising-commands.",
+    "href": "slides/3_github_without_fear.html#understanding-concepts-matters-more-than-memorising-commands.",
+    "title": "GitHub without fear",
+    "section": "Understanding concepts matters more than memorising commands.",
+    "text": "Understanding concepts matters more than memorising commands."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#these-are-normal-learning-experiences.",
+    "href": "slides/3_github_without_fear.html#these-are-normal-learning-experiences.",
+    "title": "GitHub without fear",
+    "section": "These are normal learning experiences.",
+    "text": "These are normal learning experiences."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#github-supports-reproducible-ecology.",
+    "href": "slides/3_github_without_fear.html#github-supports-reproducible-ecology.",
+    "title": "GitHub without fear",
+    "section": "GitHub supports reproducible ecology.",
+    "text": "GitHub supports reproducible ecology."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#this-improves-reuse-and-verification.",
+    "href": "slides/3_github_without_fear.html#this-improves-reuse-and-verification.",
+    "title": "GitHub without fear",
+    "section": "This improves reuse and verification.",
+    "text": "This improves reuse and verification."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#suggested-name",
+    "href": "slides/3_github_without_fear.html#suggested-name",
+    "title": "GitHub without fear",
+    "section": "Suggested name",
+    "text": "Suggested name\nwildlife-reproducibility-workshop"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#result",
+    "href": "slides/3_github_without_fear.html#result",
+    "title": "GitHub without fear",
+    "section": "Result",
+    "text": "Result\nYou now have:\n\nLocal repository\nGit tracking enabled\nGitHub connection established"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#observe-git-pane",
+    "href": "slides/3_github_without_fear.html#observe-git-pane",
+    "title": "GitHub without fear",
+    "section": "Observe Git pane",
+    "text": "Observe Git pane\nRStudio now shows changed files."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#refresh-github-page",
+    "href": "slides/3_github_without_fear.html#refresh-github-page",
+    "title": "GitHub without fear",
+    "section": "Refresh GitHub page",
+    "text": "Refresh GitHub page\nYour project is now online."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#important-habit",
+    "href": "slides/3_github_without_fear.html#important-habit",
+    "title": "GitHub without fear",
+    "section": "Important habit",
+    "text": "Important habit\nAlways pull before starting work."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#key-point",
+    "href": "slides/3_github_without_fear.html#key-point",
+    "title": "GitHub without fear",
+    "section": "Key point",
+    "text": "Key point\nGit prevents silent overwriting."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#widely-used-in-open-science.",
+    "href": "slides/3_github_without_fear.html#widely-used-in-open-science.",
+    "title": "GitHub without fear",
+    "section": "Widely used in open science.",
+    "text": "Widely used in open science."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#useful-for-ecology-projects-and-workshops.",
+    "href": "slides/3_github_without_fear.html#useful-for-ecology-projects-and-workshops.",
+    "title": "GitHub without fear",
+    "section": "Useful for ecology projects and workshops.",
+    "text": "Useful for ecology projects and workshops."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#small-habits-prevent-big-problems.",
+    "href": "slides/3_github_without_fear.html#small-habits-prevent-big-problems.",
+    "title": "GitHub without fear",
+    "section": "Small habits prevent big problems.",
+    "text": "Small habits prevent big problems."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#open-science-still-requires-responsible-sharing.",
+    "href": "slides/3_github_without_fear.html#open-science-still-requires-responsible-sharing.",
+    "title": "GitHub without fear",
+    "section": "Open science still requires responsible sharing.",
+    "text": "Open science still requires responsible sharing."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#you-do-not-need-to-master-everything-immediately.",
+    "href": "slides/3_github_without_fear.html#you-do-not-need-to-master-everything-immediately.",
+    "title": "GitHub without fear",
+    "section": "You do not need to master everything immediately.",
+    "text": "You do not need to master everything immediately."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#your-first-fully-reproducible-github-project",
+    "href": "slides/3_github_without_fear.html#your-first-fully-reproducible-github-project",
+    "title": "GitHub without fear",
+    "section": "Your first fully reproducible GitHub project",
+    "text": "Your first fully reproducible GitHub project\nIncluding:\n\nRStudio project\nFolder structure\nScripts\nCommits\nCollaboration workflow"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#recommended-sequence",
+    "href": "slides/3_github_without_fear.html#recommended-sequence",
+    "title": "GitHub without fear",
+    "section": "Recommended sequence",
+    "text": "Recommended sequence\n\nCreate repository online\nClone into RStudio\nAdd files\nCommit\nPush\nEdit README\nPull changes\nShow history on GitHub"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#emphasise-repeatedly",
+    "href": "slides/3_github_without_fear.html#emphasise-repeatedly",
+    "title": "GitHub without fear",
+    "section": "Emphasise repeatedly",
+    "text": "Emphasise repeatedly\n\nGitHub is a tool, not a judgement\nEveryone makes mistakes\nVersion control reduces stress\nCollaboration becomes safer\nReproducibility improves transparency\nOpen workflows help future-you"
   }
 ]

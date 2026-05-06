@@ -9,3 +9,5 @@ editor: visual
 ## Sessions
 
 - [Introduction](slides/1_welcome.html)
+- [What is a repoducible project?](slides/2_reproducible_research.html)
+- [GitHub without fear](slides/3_github_without_fear.html)

@@ -1,0 +1,458 @@
+---
+title: "What Is a Reproducible Project?"
+format: 
+  revealjs:
+      theme: solarized
+      slide-number: true
+editor: visual
+bibliography: bib_example2.bib
+---
+
+## Open workflows for ecology and wildlife research
+
+Topics:
+
+- Folder structure
+- Raw vs processed data
+- Scripts and automation
+- Documentation
+- Portable workflows
+
+## Learning Goals
+
+By the end of this session you should be able to:
+
+- Recognise the components of a reproducible project
+- Understand why project structure matters
+- Separate raw and processed data safely
+- Organise scripts logically
+- Use relative paths
+- Create a simple reproducible workflow in RStudio
+
+## Does this look familiar?
+
+```text
+Desktop/
+  analysis/
+    final_analysis.R
+    final_analysis_v2.R
+    final_analysis_v2_FINAL.R
+    final_analysis_v2_FINAL_REAL.R
+    figure_new_final.png
+    temp_data.csv
+    old_data.csv
+```
+
+## Common problems
+
+- Which script is correct?
+- Which data were used?
+- Which figures belong to which analysis?
+- Can another person rerun this?
+
+## Reproducibility Is Not Just About Publishing Code
+
+*Reproducibility means:*
+
+Someone else can:
+
+1. Open the project
+2. Understand the workflow
+3. Run the analysis
+4. Recreate the outputs
+
+## Ideally with minimal confusion
+
+This includes:
+
+- Data organisation
+- Documentation
+- Scripts
+- Dependencies
+- File structure
+
+
+## Why Reproducibility Matters in Ecology
+
+Ecology workflows are often complex
+
+Examples:
+
+- Camera trap datasets
+- Spatial layers
+- Occupancy models
+- Meta-analysis workflows
+- Long-term monitoring
+- Multi-country collaborations
+
+## Complexity increases risk
+
+Small workflow issues can make projects difficult to reproduce.
+
+## A typical reproducible workflow
+
+```text
+Raw data
+   ↓
+Cleaning scripts
+   ↓
+Processed data
+   ↓
+Analysis scripts
+   ↓
+Figures and tables
+   ↓
+Reports/manuscripts
+```
+
+## Core components of a reproducible project
+
+A project usually contains:
+
+- Raw data
+- Processed data
+- Scripts
+- Outputs
+- Documentation
+- Metadata
+- A project file
+
+**The structure itself is part of the methodology.**
+
+## Example project structure
+
+```text
+my_project/
+├── data_raw/
+├── data_processed/
+├── scripts/
+├── outputs/
+├── docs/
+├── README.md
+└── my_project.Rproj
+```
+
+## Benefits
+
+- Easier navigation
+- Easier collaboration (even with your future self!)
+- Easier automation
+- Easier handover
+
+
+## Raw vs Processed Data
+
+*Never manually edit raw data*
+
+Raw data
+
+- Original source files
+- Untouched
+- Read-only if possible
+
+Processed data
+
+- Cleaned data
+- Derived variables
+- Analysis-ready datasets
+
+## Example ecology workflow
+
+```text
+camera_trap_data.csv
+        ↓
+clean_camera_data.R
+        ↓
+camera_data_clean.csv
+        ↓
+occupancy_model.R
+        ↓
+occupancy_results.csv
+        ↓
+figures/
+```
+
+The scripts explain exactly what happened.
+
+## Scripts Are Better Than Manual Steps
+
+*Manual workflows are fragile*
+
+Problems with manual editing:
+
+- Difficult to track changes
+- Easy to introduce errors
+- Impossible to reproduce precisely
+- Hard to scale
+
+## Scripts are documentation
+
+Good scripts explain:
+
+- What was done
+- Why it was done
+- In what order
+
+## Documentation Matters
+
+*Good projects explain themselves*
+
+Minimum documentation:
+
+A `README.md` should explain:
+
+- What the project is
+- Where the data came from
+- How to run the analysis
+- Folder structure
+- Required software/packages
+
+**Future-you will appreciate this.**
+
+## Relative Paths
+
+*Avoid absolute paths!*
+
+Bad
+
+```r
+read.csv("C:/Users/matt/Desktop/project/data.csv")
+```
+
+Better
+
+```r
+read.csv("data_raw/data.csv")
+```
+
+Even better
+
+```r
+here::here("data_raw", "data.csv")
+```
+
+## Why Relative Paths Matter
+
+*Absolute paths break collaboration*
+
+Absolute paths:
+
+- Only work on your computer
+- Break when folders move
+- Cause problems across operating systems
+
+Relative paths:
+
+- Improve portability
+- Improve collaboration
+- Improve reproducibility
+
+
+## By biggest bugbear
+
+![](https://www.dndbeyond.com/avatars/thumbnails/47144/717/1000/1000/638742157685478339.png)
+
+##
+
+```{r}
+#| echo: true
+#| eval: false
+#| 
+
+rm(list=ls())
+
+```
+
+
+*This is just rude*
+
+## Gold-standard reproduciblity 
+
+[Red Fox IPM](https://github.com/ChloeRN/VredfoxIPM)
+
+## Common Mistakes
+
+- Files on Desktop
+- Manual spreadsheet editing
+- Missing scripts
+- Missing metadata
+- Unclear filenames
+- Mixing raw and processed data
+- No version control
+- Hard-coded paths
+
+
+## Hands-on exercise
+
+*Goal*
+
+Build your first reproducible research project.
+
+You will:
+
+1. Create an RStudio project
+2. Build a folder structure
+3. Add a small dataset
+4. Create a cleaning script
+5. Generate a figure
+6. Write a README
+
+## Exercise workflow
+
+```text
+Create project
+      ↓
+Add folders
+      ↓
+Import raw data
+      ↓
+Create cleaning script
+      ↓
+Save processed data
+      ↓
+Create plot
+      ↓
+Document project
+```
+
+## Step 1 — Create a project
+
+In RStudio:
+
+1. File → New Project
+2. New Directory
+3. New Project
+4. Name it:
+
+```text
+wildlife_reproducibility_project
+```
+
+## Step 2 — Create folders
+
+Create these folders:
+
+```text
+/data_raw
+/data_processed
+/scripts
+/outputs
+/docs
+```
+Or create them using R:
+
+```r
+folders <- c(
+  "data_raw",
+  "data_processed",
+  "scripts",
+  "outputs",
+  "docs"
+)
+
+sapply(folders, dir.create)
+```
+## Step 3 — Add raw data
+
+Download the [workshop dataset](https://raw.githubusercontent.com/DrMattG/Open_wildlife_workshop/refs/heads/main/data_raw/wildlife_data.csv) from GitHub.
+
+Save it into:
+
+```text
+/data_raw
+```
+
+## Step 4 — Create a cleaning script
+
+Create:
+
+```text
+scripts/01_clean_data.R
+```
+
+Example:
+
+```r
+library(readr)
+library(dplyr)
+wildlife <- read_csv(
+  here::here("data_raw", "wildlife_data.csv")
+)
+
+wildlife_clean <- wildlife %>%
+  filter(!is.na(count))
+write_csv(
+  wildlife_clean,
+  here::here("data_processed", "wildlife_clean.csv")
+)
+```
+
+## Step 5 — Create a figure
+
+Create:
+
+```text
+scripts/02_make_plot.R
+```
+
+Example:
+
+```r
+library(ggplot2)
+library(readr)
+
+wildlife_clean <- read_csv(
+  here::here("data_processed", "wildlife_clean.csv")
+)
+
+p <- ggplot(wildlife_clean,
+            aes(x = habitat,
+                y = count)) +
+  geom_boxplot()
+
+ggsave(
+  filename = here::here("outputs", "habitat_plot.png"),
+  plot = p,
+  width = 6,
+  height = 4
+)
+```
+
+## Step 6 — Create a README
+
+Create:
+
+```text
+README.md
+```
+
+Include:
+
+- Project title
+- Short description
+- Folder structure
+- How to run the analysis
+- Required packages
+
+*Keep it simple*
+
+## What did we build?
+
+You now have:
+
+- A reproducible folder structure
+- Raw and processed data separation
+- Documented scripts
+- Reproducible outputs
+- Basic documentation
+
+## Useful Links
+
+- [Quarto](https://quarto.org/)
+
+- [The Turing Way](https://the-turing-way.netlify.app/)
+
+- [Happy Git with R](https://happygitwithr.com/)
+
+- [here package](https://here.r-lib.org/)
+
