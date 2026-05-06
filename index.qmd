@@ -1,0 +1,11 @@
+---
+title: "Open Research for Wildlife & Ecology: Hands-on Workshop"
+format: html
+editor: visual
+---
+
+# Workshop Slides
+
+## Sessions
+
+- [Introduction](slides/1_welcome.html)

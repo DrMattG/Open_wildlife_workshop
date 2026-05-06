@@ -1,14 +1,12 @@
 # Open Research for Wildlife & Ecology: Hands-on Workshop
 
-
 ## Nordic Early-Career Researchers
 
 ### May 12th 2026
 
 ### Schedule
 
-Timings may change on the day due to participants needs and the timing
-of the canteen
+Timings may change on the day due to participants needs and the timing of the canteen
 
 | Time | Session | Focus |
 |----|----|----|
@@ -29,9 +27,8 @@ of the canteen
 
 ### Install software
 
-- Latest version of **R**  
-  *(use the newest version you can — some universities restrict
-  updates)*
+- Latest version of **R**\
+  *(use the newest version you can — some universities restrict updates)*
 - Latest version of **RStudio Desktop**
 - **Git**
   - Windows: <https://git-scm.com/download/win>
