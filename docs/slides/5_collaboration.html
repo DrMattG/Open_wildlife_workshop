@@ -260,34 +260,74 @@
 <li>When is it complete?</li>
 </ul>
 </section>
-<section id="forking-vs-branching" class="slide level2">
-<h2>Forking vs Branching</h2>
-<p>A fork is:</p>
+<section id="clone-vs-fork-vs-branch" class="slide level2">
+<h2>Clone vs Fork vs Branch</h2>
+<p>All three involve “copies” in some way.</p>
+<p>But they happen at different levels:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Happens where?</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clone</td>
+<td>Your computer</td>
+<td>Download repo locally</td>
+</tr>
+<tr class="even">
+<td>Branch</td>
+<td>Inside repository</td>
+<td>Safe parallel work</td>
+</tr>
+<tr class="odd">
+<td>Fork</td>
+<td>On GitHub</td>
+<td>Your own copy of another repo</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cloning-a-repository" class="slide level2">
+<h2>Cloning a Repository</h2>
+<p>Clone = download repository locally</p>
+<p>You use clone when you want to:</p>
 <ul>
-<li>your own copy of another repository</li>
-<li>usually used when contributing to external projects</li>
-<li>independent from the original repository</li>
+<li>work on a project</li>
+<li>run analyses</li>
+<li>edit files locally</li>
+<li>connect GitHub to RStudio</li>
 </ul>
+<p>Example https://github.com/DrMattG/Open_wildlife_workshop.git</p>
+<p>Now the project exists on your computer.</p>
+</section>
+<section id="visual-clone-diagram" class="slide level2">
+<h2>Visual Clone Diagram</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>GitHub repository</span>
+<span id="cb2-2"><a></a></span>
+<span id="cb2-3"><a></a>        ↓ clone</span>
+<span id="cb2-4"><a></a></span>
+<span id="cb2-5"><a></a>Your computer</span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a>        ↓</span>
+<span id="cb2-8"><a></a></span>
+<span id="cb2-9"><a></a>Local editable project</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="what-is-a-branch" class="slide level2">
+<h2>What Is a Branch?</h2>
+<p>Branches = safe experimentation</p>
 <p>A branch is:</p>
-<ul>
-<li>a parallel version inside a repository</li>
-<li>used for safe development and experimentation</li>
-</ul>
+<p>a parallel version inside a repository used for development and testing isolated from the main workflow</p>
 </section>
-<section id="a-branch-is" class="slide level2">
-<h2>A branch is:</h2>
-<ul>
-<li>an independent version of the project</li>
-<li>where changes can be tested safely</li>
-</ul>
-<p><em>Work without breaking the main project.</em></p>
-</section>
-<section id="simple-branch-workflow" class="slide level2">
-<h2>Simple Branch Workflow</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>main</span>
-<span id="cb2-2"><a></a> ├── fix-readme</span>
-<span id="cb2-3"><a></a> ├── occupancy-update</span>
-<span id="cb2-4"><a></a> └── new-figures</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="branch-workflow-diagram" class="slide level2">
+<h2>Branch Workflow Diagram</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>main</span>
+<span id="cb3-2"><a></a> ├── fix-readme</span>
+<span id="cb3-3"><a></a> ├── occupancy-update</span>
+<span id="cb3-4"><a></a> └── new-figures</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Each branch can evolve independently.</p>
 </section>
 <section id="why-branches-matter" class="slide level2">
@@ -317,36 +357,36 @@
 </section>
 <section id="pull-request-workflow" class="slide level2">
 <h2>Pull Request Workflow</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>Create issue</span>
-<span id="cb3-2"><a></a>      ↓</span>
-<span id="cb3-3"><a></a>Create branch</span>
-<span id="cb3-4"><a></a>      ↓</span>
-<span id="cb3-5"><a></a>Make changes</span>
-<span id="cb3-6"><a></a>      ↓</span>
-<span id="cb3-7"><a></a>Commit changes</span>
-<span id="cb3-8"><a></a>      ↓</span>
-<span id="cb3-9"><a></a>Open pull request</span>
-<span id="cb3-10"><a></a>      ↓</span>
-<span id="cb3-11"><a></a>Review + discussion</span>
-<span id="cb3-12"><a></a>      ↓</span>
-<span id="cb3-13"><a></a>Merge into main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a></a>Create issue</span>
+<span id="cb4-2"><a></a>      ↓</span>
+<span id="cb4-3"><a></a>Create branch</span>
+<span id="cb4-4"><a></a>      ↓</span>
+<span id="cb4-5"><a></a>Make changes</span>
+<span id="cb4-6"><a></a>      ↓</span>
+<span id="cb4-7"><a></a>Commit changes</span>
+<span id="cb4-8"><a></a>      ↓</span>
+<span id="cb4-9"><a></a>Open pull request</span>
+<span id="cb4-10"><a></a>      ↓</span>
+<span id="cb4-11"><a></a>Review + discussion</span>
+<span id="cb4-12"><a></a>      ↓</span>
+<span id="cb4-13"><a></a>Merge into main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="forking-workflow-example" class="slide level2">
 <h2>Forking Workflow Example</h2>
 <p>Example contribution workflow</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a></a>Original repository</span>
-<span id="cb4-2"><a></a>        ↓</span>
-<span id="cb4-3"><a></a>Fork repository</span>
-<span id="cb4-4"><a></a>        ↓</span>
-<span id="cb4-5"><a></a>Clone fork locally</span>
-<span id="cb4-6"><a></a>        ↓</span>
-<span id="cb4-7"><a></a>Create branch</span>
-<span id="cb4-8"><a></a>        ↓</span>
-<span id="cb4-9"><a></a>Make changes</span>
-<span id="cb4-10"><a></a>        ↓</span>
-<span id="cb4-11"><a></a>Push branch</span>
-<span id="cb4-12"><a></a>        ↓</span>
-<span id="cb4-13"><a></a>Open pull request</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a></a>Original repository</span>
+<span id="cb5-2"><a></a>        ↓</span>
+<span id="cb5-3"><a></a>Fork repository</span>
+<span id="cb5-4"><a></a>        ↓</span>
+<span id="cb5-5"><a></a>Clone fork locally</span>
+<span id="cb5-6"><a></a>        ↓</span>
+<span id="cb5-7"><a></a>Create branch</span>
+<span id="cb5-8"><a></a>        ↓</span>
+<span id="cb5-9"><a></a>Make changes</span>
+<span id="cb5-10"><a></a>        ↓</span>
+<span id="cb5-11"><a></a>Push branch</span>
+<span id="cb5-12"><a></a>        ↓</span>
+<span id="cb5-13"><a></a>Open pull request</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="when-would-you-fork" class="slide level2">
 <h2>When Would You Fork?</h2>
@@ -359,20 +399,8 @@
 <li>contributing to open-source tools</li>
 </ul>
 </section>
-<section id="live-demo" class="slide level2">
-<h2>Live demo</h2>
-<ul>
-<li>Creating an issue</li>
-<li>Creating a branch</li>
-<li>Editing README</li>
-<li>Committing changes</li>
-<li>Opening a pull request</li>
-<li>Reviewing and merging</li>
-</ul>
-</section>
-<section>
-<section id="common-fear" class="title-slide slide level1 center">
-<h1>Common Fear</h1>
+<section id="common-fears" class="slide level2">
+<h2>Common Fears</h2>
 <p>“This seems complicated”</p>
 <p>Reality:</p>
 <ul>
@@ -398,9 +426,9 @@
 <section id="giant-commits" class="slide level2">
 <h2>Giant commits</h2>
 <p>Bad:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a></a>Update everything</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a></a>Update everything</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Better:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a></a>Add occupancy model script</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a></a>Add occupancy model script</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="small-commits-are-easier-to" class="slide level2">
 <h2>Small commits are easier to:</h2>
@@ -493,9 +521,10 @@
 </ul>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/NKV_logo_02.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>

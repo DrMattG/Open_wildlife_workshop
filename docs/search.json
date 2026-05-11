@@ -35,25 +35,39 @@
     "text": "Example issue\nIssue #14\nAdd metadata documentation for camera trap dataset\nPossible discussion:\n\nWhat needs to be done?\nWho is responsible?\nWhen is it complete?"
   },
   {
-    "objectID": "slides/5_collaboration.html#forking-vs-branching",
-    "href": "slides/5_collaboration.html#forking-vs-branching",
+    "objectID": "slides/5_collaboration.html#clone-vs-fork-vs-branch",
+    "href": "slides/5_collaboration.html#clone-vs-fork-vs-branch",
     "title": "Collaboration Workflows",
-    "section": "Forking vs Branching",
-    "text": "Forking vs Branching\nA fork is:\n\nyour own copy of another repository\nusually used when contributing to external projects\nindependent from the original repository\n\nA branch is:\n\na parallel version inside a repository\nused for safe development and experimentation"
+    "section": "Clone vs Fork vs Branch",
+    "text": "Clone vs Fork vs Branch\nAll three involve “copies” in some way.\nBut they happen at different levels:\n\n\n\nConcept\nHappens where?\nPurpose\n\n\n\n\nClone\nYour computer\nDownload repo locally\n\n\nBranch\nInside repository\nSafe parallel work\n\n\nFork\nOn GitHub\nYour own copy of another repo"
   },
   {
-    "objectID": "slides/5_collaboration.html#a-branch-is",
-    "href": "slides/5_collaboration.html#a-branch-is",
+    "objectID": "slides/5_collaboration.html#cloning-a-repository",
+    "href": "slides/5_collaboration.html#cloning-a-repository",
     "title": "Collaboration Workflows",
-    "section": "A branch is:",
-    "text": "A branch is:\n\nan independent version of the project\nwhere changes can be tested safely\n\nWork without breaking the main project."
+    "section": "Cloning a Repository",
+    "text": "Cloning a Repository\nClone = download repository locally\nYou use clone when you want to:\n\nwork on a project\nrun analyses\nedit files locally\nconnect GitHub to RStudio\n\nExample https://github.com/DrMattG/Open_wildlife_workshop.git\nNow the project exists on your computer."
   },
   {
-    "objectID": "slides/5_collaboration.html#simple-branch-workflow",
-    "href": "slides/5_collaboration.html#simple-branch-workflow",
+    "objectID": "slides/5_collaboration.html#visual-clone-diagram",
+    "href": "slides/5_collaboration.html#visual-clone-diagram",
     "title": "Collaboration Workflows",
-    "section": "Simple Branch Workflow",
-    "text": "Simple Branch Workflow\nmain\n ├── fix-readme\n ├── occupancy-update\n └── new-figures\nEach branch can evolve independently."
+    "section": "Visual Clone Diagram",
+    "text": "Visual Clone Diagram\nGitHub repository\n\n        ↓ clone\n\nYour computer\n\n        ↓\n\nLocal editable project"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#what-is-a-branch",
+    "href": "slides/5_collaboration.html#what-is-a-branch",
+    "title": "Collaboration Workflows",
+    "section": "What Is a Branch?",
+    "text": "What Is a Branch?\nBranches = safe experimentation\nA branch is:\na parallel version inside a repository used for development and testing isolated from the main workflow"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#branch-workflow-diagram",
+    "href": "slides/5_collaboration.html#branch-workflow-diagram",
+    "title": "Collaboration Workflows",
+    "section": "Branch Workflow Diagram",
+    "text": "Branch Workflow Diagram\nmain\n ├── fix-readme\n ├── occupancy-update\n └── new-figures\nEach branch can evolve independently."
   },
   {
     "objectID": "slides/5_collaboration.html#why-branches-matter",
@@ -91,11 +105,11 @@
     "text": "When Would You Fork?\nForks are useful when:\n\ncontributing to external projects\ncollaborating across organisations\nteaching workflows\nexperimenting independently\ncontributing to open-source tools"
   },
   {
-    "objectID": "slides/5_collaboration.html#live-demo",
-    "href": "slides/5_collaboration.html#live-demo",
+    "objectID": "slides/5_collaboration.html#common-fears",
+    "href": "slides/5_collaboration.html#common-fears",
     "title": "Collaboration Workflows",
-    "section": "Live demo",
-    "text": "Live demo\n\nCreating an issue\nCreating a branch\nEditing README\nCommitting changes\nOpening a pull request\nReviewing and merging"
+    "section": "Common Fears",
+    "text": "Common Fears\n“This seems complicated”\nReality:\n\nMost workflows are small\nMistakes are common\nNobody learns Git perfectly immediately\n\nThe goal is reducing chaos, not perfection."
   },
   {
     "objectID": "slides/5_collaboration.html#editing-directly-on-main",
@@ -564,14 +578,14 @@
     "href": "index.html",
     "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
     "section": "",
-    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear\nQuarto reports\nCollaboration\nSharing data & code"
+    "text": "Introduction\nWhat is a reproducible project?\nGitHub without fear\nQuarto reports\nCollaboration\nSharing data & code"
   },
   {
     "objectID": "index.html#sessions",
     "href": "index.html#sessions",
     "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
     "section": "",
-    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear\nQuarto reports\nCollaboration\nSharing data & code"
+    "text": "Introduction\nWhat is a reproducible project?\nGitHub without fear\nQuarto reports\nCollaboration\nSharing data & code"
   },
   {
     "objectID": "My_wildlife_report_params.html",
@@ -903,11 +917,11 @@
     "text": "What Is a Licence?\nLicences explain reuse permissions\nWithout a licence:\n\nreuse becomes unclear\ncollaborators may hesitate\nlegal uncertainty increases"
   },
   {
-    "objectID": "slides/6_sharing.html#licences-clarify-expectations.",
-    "href": "slides/6_sharing.html#licences-clarify-expectations.",
+    "objectID": "slides/6_sharing.html#licences-clarify-expectations",
+    "href": "slides/6_sharing.html#licences-clarify-expectations",
     "title": "Sharing Data and Code Responsibly",
-    "section": "Licences clarify expectations.",
-    "text": "Licences clarify expectations.\n\n\n\nLicence\nTypical use\n\n\n\n\nMIT\nOpen code licence\n\n\nGPL\nOpen-source/copyleft\n\n\nCC-BY\nReuse with attribution\n\n\nCC-BY-NC\nNon-commercial reuse"
+    "section": "Licences clarify expectations",
+    "text": "Licences clarify expectations\nChoose a license - website\n\n\n\nLicence\nTypical use\n\n\n\n\nMIT\nOpen code licence\n\n\nGPL\nOpen-source/copyleft\n\n\nCC-BY\nReuse with attribution\n\n\nCC-BY-NC\nNon-commercial reuse"
   },
   {
     "objectID": "slides/6_sharing.html#sensitive-species-example",

@@ -1,6 +1,12 @@
 ---
 title: "Sharing Data and Code Responsibly"
+format: 
+  revealjs:
+      theme: simple
+      slide-number: true
+      logo: "images/NKV_logo_02.png"
 editor: visual
+bibliography: bib_example2.bib
 ---
 
 Topics:
@@ -84,6 +90,7 @@ Description: Number of observed individuals
 Unit: individuals
 Missing values: NA = no observation recorded
 ```
+
 ## FAIR Principles
 
 (meta)Data should be:
@@ -103,8 +110,9 @@ Without a licence:
 - collaborators may hesitate
 - legal uncertainty increases
 
-## Licences clarify expectations.
+## Licences clarify expectations
 
+[Choose a license - website](https://choosealicense.com/)
 
 | Licence  | Typical use            |
 |----------|------------------------|
@@ -112,7 +120,6 @@ Without a licence:
 | GPL      | Open-source/copyleft   |
 | CC-BY    | Reuse with attribution |
 | CC-BY-NC | Non-commercial reuse   |
-
 
 ## Sensitive Species Example
 
@@ -144,7 +151,6 @@ Examples:
 - Institutional repositories
 - Dryad
 
-
 ## Good Sharing Checklist
 
 - Is the workflow reproducible?
@@ -168,7 +174,6 @@ Examples:
 - Collaboration
 - Better science
 
-
 ## Nordic Open Science Community
 
 # Stay connected
@@ -178,7 +183,6 @@ Examples:
 - SORTEE
 - Open science communities
 - ESHackathon
-- GitHub organisations
-- Local peer support
+- Peer support
 
 Small improvements compound over time.
