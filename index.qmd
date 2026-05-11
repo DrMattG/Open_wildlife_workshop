@@ -1,6 +1,8 @@
 ---
 title: "Open Research for Wildlife & Ecology: Hands-on Workshop"
-format: html
+format: 
+  html:
+    css: style.css
 editor: visual
 ---
 
