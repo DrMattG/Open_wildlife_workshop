@@ -1,5 +1,586 @@
 [
   {
+    "objectID": "slides/5_collaboration.html#working-together-without-chaos",
+    "href": "slides/5_collaboration.html#working-together-without-chaos",
+    "title": "Collaboration Workflows",
+    "section": "Working together without chaos",
+    "text": "Working together without chaos\nTopics:\n\nIssues\nBranches\nPull requests\nProject handover\nCommon mistakes"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#collaboration-problems-in-ecology",
+    "href": "slides/5_collaboration.html#collaboration-problems-in-ecology",
+    "title": "Collaboration Workflows",
+    "section": "Collaboration Problems in Ecology",
+    "text": "Collaboration Problems in Ecology\nCommon collaboration problems\n\nOverwritten files\nConflicting analyses\nUnclear ownership\nMissing documentation\nLost project knowledge\nDifficult student handover\n“Works on my machine” workflows"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#what-is-an-issue",
+    "href": "slides/5_collaboration.html#what-is-an-issue",
+    "title": "Collaboration Workflows",
+    "section": "What Is an Issue?",
+    "text": "What Is an Issue?\nIssues = structured project tasks\nExamples:\n\nFix species names\nUpdate occupancy model\nAdd metadata documentation\nReview extraction decisions\nImprove README\n\nIssues make work visible."
+  },
+  {
+    "objectID": "slides/5_collaboration.html#why-issues-matter",
+    "href": "slides/5_collaboration.html#why-issues-matter",
+    "title": "Collaboration Workflows",
+    "section": "Why Issues Matter",
+    "text": "Why Issues Matter\nIssues help teams:\n\nTrack progress\nDocument decisions\nClarify responsibilities\nDiscuss problems transparently\nReduce invisible work"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#example-issue",
+    "href": "slides/5_collaboration.html#example-issue",
+    "title": "Collaboration Workflows",
+    "section": "Example issue",
+    "text": "Example issue\nIssue #14\nAdd metadata documentation for camera trap dataset\nPossible discussion:\n\nWhat needs to be done?\nWho is responsible?\nWhen is it complete?"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#forking-vs-branching",
+    "href": "slides/5_collaboration.html#forking-vs-branching",
+    "title": "Collaboration Workflows",
+    "section": "Forking vs Branching",
+    "text": "Forking vs Branching\nA fork is:\n\nyour own copy of another repository\nusually used when contributing to external projects\nindependent from the original repository\n\nA branch is:\n\na parallel version inside a repository\nused for safe development and experimentation"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#a-branch-is",
+    "href": "slides/5_collaboration.html#a-branch-is",
+    "title": "Collaboration Workflows",
+    "section": "A branch is:",
+    "text": "A branch is:\n\nan independent version of the project\nwhere changes can be tested safely\n\nWork without breaking the main project."
+  },
+  {
+    "objectID": "slides/5_collaboration.html#simple-branch-workflow",
+    "href": "slides/5_collaboration.html#simple-branch-workflow",
+    "title": "Collaboration Workflows",
+    "section": "Simple Branch Workflow",
+    "text": "Simple Branch Workflow\nmain\n ├── fix-readme\n ├── occupancy-update\n └── new-figures\nEach branch can evolve independently."
+  },
+  {
+    "objectID": "slides/5_collaboration.html#why-branches-matter",
+    "href": "slides/5_collaboration.html#why-branches-matter",
+    "title": "Collaboration Workflows",
+    "section": "Why Branches Matter",
+    "text": "Why Branches Matter\nBranches are useful for:\n\nTesting new analyses\nTrying ideas safely\nCollaborative editing\nReviewing changes\nProtecting stable workflows"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#pull-requests",
+    "href": "slides/5_collaboration.html#pull-requests",
+    "title": "Collaboration Workflows",
+    "section": "Pull Requests",
+    "text": "Pull Requests\nA pull request means:\n\n“Please review my changes before merging them.”\n\nPRs support:\n\nReview\nDiscussion\nTransparency\nQuality control"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#pull-request-workflow",
+    "href": "slides/5_collaboration.html#pull-request-workflow",
+    "title": "Collaboration Workflows",
+    "section": "Pull Request Workflow",
+    "text": "Pull Request Workflow\nCreate issue\n      ↓\nCreate branch\n      ↓\nMake changes\n      ↓\nCommit changes\n      ↓\nOpen pull request\n      ↓\nReview + discussion\n      ↓\nMerge into main"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#forking-workflow-example",
+    "href": "slides/5_collaboration.html#forking-workflow-example",
+    "title": "Collaboration Workflows",
+    "section": "Forking Workflow Example",
+    "text": "Forking Workflow Example\nExample contribution workflow\nOriginal repository\n        ↓\nFork repository\n        ↓\nClone fork locally\n        ↓\nCreate branch\n        ↓\nMake changes\n        ↓\nPush branch\n        ↓\nOpen pull request"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#when-would-you-fork",
+    "href": "slides/5_collaboration.html#when-would-you-fork",
+    "title": "Collaboration Workflows",
+    "section": "When Would You Fork?",
+    "text": "When Would You Fork?\nForks are useful when:\n\ncontributing to external projects\ncollaborating across organisations\nteaching workflows\nexperimenting independently\ncontributing to open-source tools"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#live-demo",
+    "href": "slides/5_collaboration.html#live-demo",
+    "title": "Collaboration Workflows",
+    "section": "Live demo",
+    "text": "Live demo\n\nCreating an issue\nCreating a branch\nEditing README\nCommitting changes\nOpening a pull request\nReviewing and merging"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#editing-directly-on-main",
+    "href": "slides/5_collaboration.html#editing-directly-on-main",
+    "title": "Collaboration Workflows",
+    "section": "Editing directly on main",
+    "text": "Editing directly on main\nProblem:\n\nunstable workflows\naccidental breakage\ndifficult recovery\n\nBetter:\n\nuse branches for changes"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#giant-commits",
+    "href": "slides/5_collaboration.html#giant-commits",
+    "title": "Collaboration Workflows",
+    "section": "Giant commits",
+    "text": "Giant commits\nBad:\nUpdate everything\nBetter:\nAdd occupancy model script"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#small-commits-are-easier-to",
+    "href": "slides/5_collaboration.html#small-commits-are-easier-to",
+    "title": "Collaboration Workflows",
+    "section": "Small commits are easier to:",
+    "text": "Small commits are easier to:\n\nunderstand\nreview\nreverse"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#documentation",
+    "href": "slides/5_collaboration.html#documentation",
+    "title": "Collaboration Workflows",
+    "section": "Documentation",
+    "text": "Documentation\nWithout documentation:\n\nonboarding becomes difficult\nworkflows become fragile\ncollaborators get lost\n\nREADME files matter."
+  },
+  {
+    "objectID": "slides/5_collaboration.html#project-knowledge-trapped-in-one-person",
+    "href": "slides/5_collaboration.html#project-knowledge-trapped-in-one-person",
+    "title": "Collaboration Workflows",
+    "section": "Project knowledge trapped in one person",
+    "text": "Project knowledge trapped in one person\nDanger signs:\n\n“Only Alex knows how this works”\nundocumented scripts\nunclear setup instructions\nmysterious folders\n\nGood workflows reduce dependency on individuals."
+  },
+  {
+    "objectID": "slides/5_collaboration.html#project-handover",
+    "href": "slides/5_collaboration.html#project-handover",
+    "title": "Collaboration Workflows",
+    "section": "Project Handover",
+    "text": "Project Handover\nProjects should survive turnover\n\nstudents graduate\nstaff change jobs\ncollaborations evolve\nprojects pause and restart"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#helpful-project-features",
+    "href": "slides/5_collaboration.html#helpful-project-features",
+    "title": "Collaboration Workflows",
+    "section": "Helpful project features",
+    "text": "Helpful project features\n\nREADME\nclear folder structure\nsetup instructions\nmetadata\nreproducible scripts\ndocumented decisions\nversion control history"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#hands-on-pair-exercise",
+    "href": "slides/5_collaboration.html#hands-on-pair-exercise",
+    "title": "Collaboration Workflows",
+    "section": "Hands-on Pair Exercise",
+    "text": "Hands-on Pair Exercise\nIn pairs:\n\nCreate an issue\nCreate a branch\nEdit README\nCommit changes\nOpen pull request\nReview and merge"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#merge-conflicts",
+    "href": "slides/5_collaboration.html#merge-conflicts",
+    "title": "Collaboration Workflows",
+    "section": "Merge Conflicts",
+    "text": "Merge Conflicts\nMerge conflicts happen\nConflict means:\nTwo changes affect the same lines."
+  },
+  {
+    "objectID": "slides/5_collaboration.html#important",
+    "href": "slides/5_collaboration.html#important",
+    "title": "Collaboration Workflows",
+    "section": "Important",
+    "text": "Important\nConflicts are:\n\nnormal\nsolvable\nnot catastrophic"
+  },
+  {
+    "objectID": "slides/5_collaboration.html#collaboration-is-infrastructure",
+    "href": "slides/5_collaboration.html#collaboration-is-infrastructure",
+    "title": "Collaboration Workflows",
+    "section": "Collaboration Is Infrastructure",
+    "text": "Collaboration Is Infrastructure\nGood workflows help:\n\nReduce stress\nReduce errors\nImprove continuity\nImprove transparency\nImprove collaboration\nImprove science"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
+    "href": "slides/3_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
+    "title": "GitHub without fear",
+    "section": "Open workflows for ecology and wildlife research",
+    "text": "Open workflows for ecology and wildlife research\nTopics:\n\nRepositories\nCommits\nPush/pull\nREADME files\nVersion control basics"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#learning-goals",
+    "href": "slides/3_github_without_fear.html#learning-goals",
+    "title": "GitHub without fear",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nBy the end of this session you should be able to:\n\nUnderstand what Git and GitHub are\nCreate and clone repositories\nMake commits confidently\nPush and pull changes"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#what-problem-does-git-solve",
+    "href": "slides/3_github_without_fear.html#what-problem-does-git-solve",
+    "title": "GitHub without fear",
+    "section": "What Problem Does Git Solve?",
+    "text": "What Problem Does Git Solve?\nA familiar workflow problem\nanalysis_final.R\nanalysis_final_v2.R\nanalysis_final_v2_REAL.R\nanalysis_final_USE_THIS_ONE.R"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#common-issues",
+    "href": "slides/3_github_without_fear.html#common-issues",
+    "title": "GitHub without fear",
+    "section": "Common issues",
+    "text": "Common issues\n\nFiles overwritten\nUnsure what changed\nDifficult collaboration\nNo backup history\nImpossible to undo mistakes safely"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#git-is-not-github",
+    "href": "slides/3_github_without_fear.html#git-is-not-github",
+    "title": "GitHub without fear",
+    "section": "Git is not GitHub",
+    "text": "Git is not GitHub\nGit\n\nVersion control system\nTracks changes to files\nWorks locally on your computer\n\nGitHub\n\nOnline hosting platform for Git repositories\nCollaboration and sharing\nBackup and project management"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#version-control",
+    "href": "slides/3_github_without_fear.html#version-control",
+    "title": "GitHub without fear",
+    "section": "Version control",
+    "text": "Version control\nGit keeps a history of changes:\n\nWhat changed\nWhen it changed\nWho changed it\nWhy it changed"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#benefits",
+    "href": "slides/3_github_without_fear.html#benefits",
+    "title": "GitHub without fear",
+    "section": "Benefits",
+    "text": "Benefits\n\nUndo mistakes\nTrack project history\nCollaborate safely\nExperiment without fear"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#why-github-matters-in-ecology",
+    "href": "slides/3_github_without_fear.html#why-github-matters-in-ecology",
+    "title": "GitHub without fear",
+    "section": "Why GitHub Matters in Ecology",
+    "text": "Why GitHub Matters in Ecology\nEcology is collaborative\nExamples:\n\nMulti-author papers\nMonitoring projects\nShared codebases\nLong-term projects\nStudent supervision\nEvidence synthesis workflows"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#what-is-a-repository",
+    "href": "slides/3_github_without_fear.html#what-is-a-repository",
+    "title": "GitHub without fear",
+    "section": "What Is a Repository?",
+    "text": "What Is a Repository?\nRepository = project folder + history\nA repository contains:\n\nCode\nData (although it shouldn’t)\nDocumentation\nFigures\nWorkflow history\n\nThink of it as:\nA project folder with memory."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#commits",
+    "href": "slides/3_github_without_fear.html#commits",
+    "title": "GitHub without fear",
+    "section": "Commits",
+    "text": "Commits\nCommits are snapshots\nA commit records:\n\nWhat changed\nWhen it changed\nA short explanation"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#good-commit-messages",
+    "href": "slides/3_github_without_fear.html#good-commit-messages",
+    "title": "GitHub without fear",
+    "section": "Good commit messages",
+    "text": "Good commit messages\nAdd cleaning script for camera trap data\nFix species names in processed dataset"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#bad-commit-messages",
+    "href": "slides/3_github_without_fear.html#bad-commit-messages",
+    "title": "GitHub without fear",
+    "section": "Bad commit messages",
+    "text": "Bad commit messages\nstuff\nasdfgh"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#a-helpful-mental-model",
+    "href": "slides/3_github_without_fear.html#a-helpful-mental-model",
+    "title": "GitHub without fear",
+    "section": "A Helpful Mental Model",
+    "text": "A Helpful Mental Model\nEdit files\n    ↓\nReview changes\n    ↓\nCommit changes\n    ↓\nPush to GitHub"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#push-and-pull",
+    "href": "slides/3_github_without_fear.html#push-and-pull",
+    "title": "GitHub without fear",
+    "section": "Push and Pull",
+    "text": "Push and Pull\nPush\nSend your local commits to GitHub.\nPull\nDownload changes from GitHub."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#typical-workflow",
+    "href": "slides/3_github_without_fear.html#typical-workflow",
+    "title": "GitHub without fear",
+    "section": "Typical workflow",
+    "text": "Typical workflow\nPull\nWork\nCommit\nPush"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#github-is-useful-for",
+    "href": "slides/3_github_without_fear.html#github-is-useful-for",
+    "title": "GitHub without fear",
+    "section": "GitHub is useful for:",
+    "text": "GitHub is useful for:\n\nBackup\nProject sharing\nCollaboration (even with youself)\nPublic documentation\nTeaching\nOpen science portfolios"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#common-fear-1",
+    "href": "slides/3_github_without_fear.html#common-fear-1",
+    "title": "GitHub without fear",
+    "section": "Common Fear #1",
+    "text": "Common Fear #1\n“What if I break everything?”\nGood news:\nGit is designed to:\n\nTrack changes\nRecover mistakes\nRestore earlier versions"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#mistakes-are-normal.",
+    "href": "slides/3_github_without_fear.html#mistakes-are-normal.",
+    "title": "GitHub without fear",
+    "section": "Mistakes are normal.",
+    "text": "Mistakes are normal.\nEven experienced users regularly:\n\nCommit the wrong file\nMerge incorrectly\nForget to pull"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#common-fear-2",
+    "href": "slides/3_github_without_fear.html#common-fear-2",
+    "title": "GitHub without fear",
+    "section": "Common Fear #2",
+    "text": "Common Fear #2\n“I don’t understand branches”\nThat is okay.\nBranches come later…\nYou do not need to master Git immediately."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#common-fear-3",
+    "href": "slides/3_github_without_fear.html#common-fear-3",
+    "title": "GitHub without fear",
+    "section": "Common Fear #3",
+    "text": "Common Fear #3\n“The terminal is scary”\nYes it is! You can do a lot using:\n\nRStudio Git pane\nGitHub Desktop\nVS Code interfaces\n\nUnderstanding concepts matters more than memorising commands."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#common-mistakes",
+    "href": "slides/3_github_without_fear.html#common-mistakes",
+    "title": "GitHub without fear",
+    "section": "Common Mistakes",
+    "text": "Common Mistakes\nCommon “beginner” mistakes\n\nForgetting to commit\nCommitting large files\nEditing directly on GitHub accidentally\nConflicts after forgetting to pull\nUploading sensitive data"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#guided-practice",
+    "href": "slides/3_github_without_fear.html#guided-practice",
+    "title": "GitHub without fear",
+    "section": "Guided practice",
+    "text": "Guided practice\nYou will:\n\nCreate a GitHub repository\nConnect it to RStudio\nAdd your reproducible project\nCommit changes\nPush to GitHub\nEdit README\nPull updates"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#create-a-github-repository",
+    "href": "slides/3_github_without_fear.html#create-a-github-repository",
+    "title": "GitHub without fear",
+    "section": "Create a GitHub repository",
+    "text": "Create a GitHub repository\nOn GitHub:\n\nClick “New repository”\nChoose a repository name\nAdd a README\nSet visibility\nCreate repository\n\nSuggested name:\nwildlife-reproducibility-workshop"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#clone-repository-into-rstudio",
+    "href": "slides/3_github_without_fear.html#clone-repository-into-rstudio",
+    "title": "GitHub without fear",
+    "section": "“Clone” repository into RStudio",
+    "text": "“Clone” repository into RStudio\nIn RStudio:\nFile → New Project → Version Control → Git\nPaste repository URL."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#result",
+    "href": "slides/3_github_without_fear.html#result",
+    "title": "GitHub without fear",
+    "section": "Result",
+    "text": "Result\nYou now have:\n\nLocal repository\nGit tracking enabled\nGitHub connection established"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#add-project-files",
+    "href": "slides/3_github_without_fear.html#add-project-files",
+    "title": "GitHub without fear",
+    "section": "Add project files",
+    "text": "Add project files\nCopy into the repository:\n\ndata_raw/\nscripts/\noutputs/\nREADME.md"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#observe-git-pane",
+    "href": "slides/3_github_without_fear.html#observe-git-pane",
+    "title": "GitHub without fear",
+    "section": "Observe Git pane",
+    "text": "Observe Git pane\nRStudio now shows changed files."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#make-your-first-commit",
+    "href": "slides/3_github_without_fear.html#make-your-first-commit",
+    "title": "GitHub without fear",
+    "section": "Make your first commit",
+    "text": "Make your first commit\nIn Git pane:\n\nTick changed files\nClick “Commit”\nWrite message\n\nExample:\nAdd initial project structure and scripts"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#push-to-github",
+    "href": "slides/3_github_without_fear.html#push-to-github",
+    "title": "GitHub without fear",
+    "section": "Push to GitHub",
+    "text": "Push to GitHub\nClick:\nPush"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#refresh-github-page",
+    "href": "slides/3_github_without_fear.html#refresh-github-page",
+    "title": "GitHub without fear",
+    "section": "Refresh GitHub page",
+    "text": "Refresh GitHub page\nYour project is now online."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#edit-the-readme",
+    "href": "slides/3_github_without_fear.html#edit-the-readme",
+    "title": "GitHub without fear",
+    "section": "Edit the README",
+    "text": "Edit the README\nAdd:\n\nProject description\nYour name\nWorkshop details\nFolder explanation\n\nCommit and push changes."
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#important-habits",
+    "href": "slides/3_github_without_fear.html#important-habits",
+    "title": "GitHub without fear",
+    "section": "Important habits",
+    "text": "Important habits\n\nAlways pull before starting work.\nCommit often"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#be-careful-with",
+    "href": "slides/3_github_without_fear.html#be-careful-with",
+    "title": "GitHub without fear",
+    "section": "Be careful with:",
+    "text": "Be careful with:\n\nSensitive species locations\nConfidential data\nPersonal information\nLarge raw files\nPasswords/API keys"
+  },
+  {
+    "objectID": "slides/3_github_without_fear.html#useful-links",
+    "href": "slides/3_github_without_fear.html#useful-links",
+    "title": "GitHub without fear",
+    "section": "Useful Links",
+    "text": "Useful Links\n\nHappy Git with R\nSoftware Carpentry Git lesson\nOh Shit, Git!?!"
+  },
+  {
+    "objectID": "slides/1_welcome.html#house-keeping",
+    "href": "slides/1_welcome.html#house-keeping",
+    "title": "Welcome",
+    "section": "House keeping",
+    "text": "House keeping\n\nFire exits\nToilets\nLunch & Coffee"
+  },
+  {
+    "objectID": "slides/1_welcome.html#today-is-practical-and-hands-on",
+    "href": "slides/1_welcome.html#today-is-practical-and-hands-on",
+    "title": "Welcome",
+    "section": "Today is practical and hands-on",
+    "text": "Today is practical and hands-on\nWe will explore:\n\nWhy reproducibility matters in ecology\nHow open workflows improve collaboration\nGitHub + R + Quarto workflows\nSharing code, data, and outputs\nReal examples from wildlife research"
+  },
+  {
+    "objectID": "slides/1_welcome.html#goal",
+    "href": "slides/1_welcome.html#goal",
+    "title": "Welcome",
+    "section": "Goal",
+    "text": "Goal\nBuild workflows that are:\n\nTransparent\nReusable\nEasier to maintain\nEasier to collaborate on"
+  },
+  {
+    "objectID": "slides/1_welcome.html#introduction-1",
+    "href": "slides/1_welcome.html#introduction-1",
+    "title": "Welcome",
+    "section": "Introduction 1",
+    "text": "Introduction 1\n\n\n\n\n\n\nOpen science is just science done the way science should be done….\n\n\n\nOR\n\n\n\n\n\n\nIn the future there will be science and closed science\n(i.e. - what we call open science today will in the future just be “science”….)\n\n\n\nSome of the following slides are adapted from Erlend Nilsen’s Into to OS"
+  },
+  {
+    "objectID": "slides/1_welcome.html#open-science-is-an-umbrella-term",
+    "href": "slides/1_welcome.html#open-science-is-an-umbrella-term",
+    "title": "Welcome",
+    "section": "Open Science is an umbrella term",
+    "text": "Open Science is an umbrella term"
+  },
+  {
+    "objectID": "slides/1_welcome.html#but-why-bother",
+    "href": "slides/1_welcome.html#but-why-bother",
+    "title": "Welcome",
+    "section": "But why bother?",
+    "text": "But why bother?"
+  },
+  {
+    "objectID": "slides/1_welcome.html#the-six-principles-of-open-science",
+    "href": "slides/1_welcome.html#the-six-principles-of-open-science",
+    "title": "Welcome",
+    "section": "The six principles of open science",
+    "text": "The six principles of open science\n\n\n\nOpen methodology\nOpen source\nOpen data\nOpen access\nOpen peer review\nOpen educational resources"
+  },
+  {
+    "objectID": "slides/1_welcome.html#different-schools-of-open-science",
+    "href": "slides/1_welcome.html#different-schools-of-open-science",
+    "title": "Welcome",
+    "section": "Different schools of open science",
+    "text": "Different schools of open science\n\n\n\n\n\n\n\n\n\nThe infrastructure school (better infrastructure -&gt;better science)\nThe public school (Science engage with society)\nThe measurement school (Alt. measures of impact )\nThe democratic school (knowledge free to all)\nThe pragmatic school (Openness improves efficiency and quality)\n\nSee Fecher and Friesike (2014)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#topics-for-discussion",
+    "href": "slides/1_welcome.html#topics-for-discussion",
+    "title": "Welcome",
+    "section": "Topics for discussion",
+    "text": "Topics for discussion\n\n\n\n\n\n\n\nWhat do YOU associate with Open Science?\nHow do you think Open Science can improve your project?"
+  },
+  {
+    "objectID": "slides/1_welcome.html#the-reproduciblity-crisis",
+    "href": "slides/1_welcome.html#the-reproduciblity-crisis",
+    "title": "Welcome",
+    "section": "The reproduciblity crisis",
+    "text": "The reproduciblity crisis\n\n\n\n\n\n\n1,500 scientists lift the lid on reproducibility | Nature"
+  },
+  {
+    "objectID": "slides/1_welcome.html#access-to-data",
+    "href": "slides/1_welcome.html#access-to-data",
+    "title": "Welcome",
+    "section": "Access to data",
+    "text": "Access to data"
+  },
+  {
+    "objectID": "slides/1_welcome.html#section",
+    "href": "slides/1_welcome.html#section",
+    "title": "Welcome",
+    "section": "",
+    "text": "When we publish scientific papers it is expected that data is shared (archived) publicly (so that other researchers can reuse the data)\nHowever, currently we often find that this is not happening\n\nSee e.g. Archmiller et al. (2020)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#section-1",
+    "href": "slides/1_welcome.html#section-1",
+    "title": "Welcome",
+    "section": "",
+    "text": "See Mandeville et al. (2021) for details"
+  },
+  {
+    "objectID": "slides/1_welcome.html#access-to-code",
+    "href": "slides/1_welcome.html#access-to-code",
+    "title": "Welcome",
+    "section": "Access to code",
+    "text": "Access to code\n\n\n\n\n\n\n\n\n\n\n\nWhen we publish scientific papers - we are expected to share (archive) R-code (or other code we are using to produce the reported results).\nAgain - there is room for improvement!\n\nSee e.g. Culina et al. (2020)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#fair",
+    "href": "slides/1_welcome.html#fair",
+    "title": "Welcome",
+    "section": "FAIR!",
+    "text": "FAIR!\n\nSee Wilkinson et al. (2016)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#questionable-research-practices",
+    "href": "slides/1_welcome.html#questionable-research-practices",
+    "title": "Welcome",
+    "section": "Questionable Research Practices",
+    "text": "Questionable Research Practices\n\nSee Fraser et al. (2018) for details and further discussion!"
+  },
+  {
+    "objectID": "slides/1_welcome.html#the-preregistration-revolution",
+    "href": "slides/1_welcome.html#the-preregistration-revolution",
+    "title": "Welcome",
+    "section": "The preregistration revolution!",
+    "text": "The preregistration revolution!\n\n\n\n\n\nSee Nosek et al. (2018)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#distinguish-between-exploratory-and-confirmatory-science",
+    "href": "slides/1_welcome.html#distinguish-between-exploratory-and-confirmatory-science",
+    "title": "Welcome",
+    "section": "Distinguish between exploratory and confirmatory science",
+    "text": "Distinguish between exploratory and confirmatory science\n\n\n\n\n\n\nSee Nilsen et al. (2020)"
+  },
+  {
+    "objectID": "slides/1_welcome.html#open-science-is-just-as-much-about.",
+    "href": "slides/1_welcome.html#open-science-is-just-as-much-about.",
+    "title": "Welcome",
+    "section": "Open science is just as much about….",
+    "text": "Open science is just as much about…."
+  },
+  {
+    "objectID": "slides/1_welcome.html#references",
+    "href": "slides/1_welcome.html#references",
+    "title": "Welcome",
+    "section": "References",
+    "text": "References\n\n\n\n\nArchmiller, Althea A., Andrew D. Johnson, Jane Nolan, et al. 2020. “Computational Reproducibility in the Wildlife Society’s Flagship Journals.” The Journal of Wildlife Management 84 (5): 1012–17. https://doi.org/10.1002/jwmg.21855.\n\n\nCulina, Antica, Ilona van den Berg, Simon Evans, and Alfredo Sánchez-Tójar. 2020. “Low Availability of Code in Ecology: A Call for Urgent Action.” PLOS Biology 18 (7): 1–9. https://doi.org/10.1371/journal.pbio.3000763.\n\n\nFecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly Publishing, edited by Sönke Bartling and Sascha Friesike. Springer. https://doi.org/10.1007/978-3-319-00026-8_2.\n\n\nFraser, Hannah, Tim Parker, Shinichi Nakagawa, Ashley Barnett, and Fiona Fidler. 2018. “Questionable Research Practices in Ecology and Evolution.” PLOS ONE 13 (7): 1–16. https://doi.org/10.1371/journal.pone.0200303.\n\n\nMandeville, Caitlin P., Wouter Koch, Erlend B. Nilsen, and Anders G. Finstad. 2021. “Open Data Practices Among Users of Primary Biodiversity Data.” BioScience 71 (11): 1128–47. https://doi.org/10.1093/biosci/biab072.\n\n\nNilsen, Erlend B., Diana E. Bowler, and John D. C. Linnell. 2020. “Exploratory and Confirmatory Research in the Open Science Era.” Journal of Applied Ecology 57 (4): 842–47. https://doi.org/10.1111/1365-2664.13571.\n\n\nNosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. “The Preregistration Revolution.” Proceedings of the National Academy of Sciences 115 (11): 2600–2606. https://doi.org/10.1073/pnas.1708274114.\n\n\nWilkinson, Mark D., Michel Dumontier, I. J. J. Aalbersberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018. https://doi.org/10.1038/sdata.2016.18."
+  },
+  {
+    "objectID": "My_wildlife_report.html",
+    "href": "My_wildlife_report.html",
+    "title": "My Wildlife Report",
+    "section": "",
+    "text": "Introduction\nThis report summarises wildlife observations.\n\nlibrary(tidyverse)  \n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nwildlife &lt;- read_csv(here::here(\"data_raw\", \"wildlife_data.csv\"))\n\nRows: 120 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): site, species, habitat, observer\ndbl (2): year, count\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nPlot\n\nggplot(wildlife,\n       aes(habitat, count)) +   \n  geom_boxplot() \n\nWarning: Removed 5 rows containing non-finite outside the scale range\n(`stat_boxplot()`)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
+    "section": "",
+    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear\nQuarto reports -Collaboration -Sharing data & code"
+  },
+  {
+    "objectID": "index.html#sessions",
+    "href": "index.html#sessions",
+    "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
+    "section": "",
+    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear\nQuarto reports -Collaboration -Sharing data & code"
+  },
+  {
+    "objectID": "My_wildlife_report_params.html",
+    "href": "My_wildlife_report_params.html",
+    "title": "My Wildlife Report",
+    "section": "",
+    "text": "Introduction\nThis report summarises wildlife observations.\n\nlibrary(tidyverse)  \n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nwildlife &lt;- read_csv(here::here(\"data_raw\", \"wildlife_data.csv\"))\n\nRows: 120 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): site, species, habitat, observer\ndbl (2): year, count\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nmoose_only&lt;-wildlife |&gt; \n  filter(species ==params$species)\n\n\n\nPlot\n\nggplot(wildlife,\n       aes(habitat, count)) +   \n  geom_boxplot() \n\nWarning: Removed 5 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\nMoose plot\n\n\nPlot\n\nggplot(moose_only,\n       aes(habitat, count)) +   \n  geom_boxplot()"
+  },
+  {
     "objectID": "slides/2_reproducible_research.html#open-workflows-for-ecology-and-wildlife-research",
     "href": "slides/2_reproducible_research.html#open-workflows-for-ecology-and-wildlife-research",
     "title": "What Is a Reproducible Project?",
@@ -231,444 +812,150 @@
     "text": "Useful Links\n\nQuarto\nThe Turing Way\nHappy Git with R\nhere package"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
-    "section": "",
-    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear"
+    "objectID": "slides/4_quarto_reports.html#the-problem",
+    "href": "slides/4_quarto_reports.html#the-problem",
+    "title": "Quarto for Transparent Reporting",
+    "section": "The Problem",
+    "text": "The Problem\nRun analysis \n↓ \nCopy figure manually \n↓ \nPaste into Word \n↓ \nChange analysis \n↓ \nForget to update figure"
   },
   {
-    "objectID": "index.html#sessions",
-    "href": "index.html#sessions",
-    "title": "Open Research for Wildlife & Ecology: Hands-on Workshop",
-    "section": "",
-    "text": "Introduction\nWhat is a repoducible project?\nGitHub without fear"
+    "objectID": "slides/4_quarto_reports.html#what-quarto-does",
+    "href": "slides/4_quarto_reports.html#what-quarto-does",
+    "title": "Quarto for Transparent Reporting",
+    "section": "What Quarto Does",
+    "text": "What Quarto Does\nQuarto combines:\n\nNarrative text\nR code\nFigures\nTables\n\nInto one reproducible document."
   },
   {
-    "objectID": "slides/1_welcome.html#house-keeping",
-    "href": "slides/1_welcome.html#house-keeping",
-    "title": "Welcome",
-    "section": "House keeping",
-    "text": "House keeping\n\nFire exits\nToilets\nLunch & Coffee"
+    "objectID": "slides/4_quarto_reports.html#a-simple-workflow",
+    "href": "slides/4_quarto_reports.html#a-simple-workflow",
+    "title": "Quarto for Transparent Reporting",
+    "section": "A Simple Workflow",
+    "text": "A Simple Workflow\nData \n↓ \nScripts \n↓ \nQuarto document \n↓ \nHTML / PDF / Word / slides"
   },
   {
-    "objectID": "slides/1_welcome.html#today-is-practical-and-hands-on",
-    "href": "slides/1_welcome.html#today-is-practical-and-hands-on",
-    "title": "Welcome",
-    "section": "Today is practical and hands-on",
-    "text": "Today is practical and hands-on\nWe will explore:\n\nWhy reproducibility matters in ecology\nHow open workflows improve collaboration\nGitHub + R + Quarto workflows\nSharing code, data, and outputs\nReal examples from wildlife research"
+    "objectID": "slides/4_quarto_reports.html#what-are-parameters",
+    "href": "slides/4_quarto_reports.html#what-are-parameters",
+    "title": "Quarto for Transparent Reporting",
+    "section": "What Are Parameters?",
+    "text": "What Are Parameters?\nParameterised reports\nOne report template can generate:\n\nmultiple species reports\nmultiple site reports\nmultiple years\nmultiple regions\n\nAutomatically."
   },
   {
-    "objectID": "slides/1_welcome.html#goal",
-    "href": "slides/1_welcome.html#goal",
-    "title": "Welcome",
-    "section": "Goal",
-    "text": "Goal\nBuild workflows that are:\n\nTransparent\nReusable\nEasier to maintain\nEasier to collaborate on"
+    "objectID": "slides/6_sharing.html#why-share-data-and-code",
+    "href": "slides/6_sharing.html#why-share-data-and-code",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Why share data and code?",
+    "text": "Why share data and code?\nSharing improves:\n\nTransparency\nReproducibility\nReuse\nCollaboration\nTeaching\nScientific trust"
   },
   {
-    "objectID": "slides/1_welcome.html#introduction-1",
-    "href": "slides/1_welcome.html#introduction-1",
-    "title": "Welcome",
-    "section": "Introduction 1",
-    "text": "Introduction 1\n\n\n\n\n\n\nOpen science is just science done the way science should be done….\n\n\n\nOR\n\n\n\n\n\n\nIn the future there will be science and closed science\n(i.e. - what we call open science today will in the future just be “science”….)\n\n\n\nSome of the following slides are adapted from Erlend Nilsen’s Into to OS"
+    "objectID": "slides/6_sharing.html#open-science-is-not-reckless-openness",
+    "href": "slides/6_sharing.html#open-science-is-not-reckless-openness",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Open science is not reckless openness",
+    "text": "Open science is not reckless openness\nImportant question:\n\nWhat should be open?\n\nNot everything can or should be shared publicly."
   },
   {
-    "objectID": "slides/1_welcome.html#open-science-is-an-umbrella-term",
-    "href": "slides/1_welcome.html#open-science-is-an-umbrella-term",
-    "title": "Welcome",
-    "section": "Open Science is an umbrella term",
-    "text": "Open Science is an umbrella term"
+    "objectID": "slides/6_sharing.html#ecological-data-can-be-sensitive",
+    "href": "slides/6_sharing.html#ecological-data-can-be-sensitive",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Ecological data can be sensitive",
+    "text": "Ecological data can be sensitive\nExamples:\n\nNesting sites\nEndangered species locations\nPoaching risks\nDisturbance-sensitive species\nIndigenous/community knowledge\nPersonal information"
   },
   {
-    "objectID": "slides/1_welcome.html#but-why-bother",
-    "href": "slides/1_welcome.html#but-why-bother",
-    "title": "Welcome",
-    "section": "But why bother?",
-    "text": "But why bother?"
+    "objectID": "slides/6_sharing.html#questions-before-sharing",
+    "href": "slides/6_sharing.html#questions-before-sharing",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Questions Before Sharing",
+    "text": "Questions Before Sharing\nBefore sharing ask:\n\nCould sharing create ecological harm?\nAre there legal restrictions?\nDoes consent apply?\nCould data be misused?\nAre sensitive locations included?"
   },
   {
-    "objectID": "slides/1_welcome.html#the-six-principles-of-open-science",
-    "href": "slides/1_welcome.html#the-six-principles-of-open-science",
-    "title": "Welcome",
-    "section": "The six principles of open science",
-    "text": "The six principles of open science\n\n\n\nOpen methodology\nOpen source\nOpen data\nOpen access\nOpen peer review\nOpen educational resources"
+    "objectID": "slides/6_sharing.html#what-can-often-be-shared",
+    "href": "slides/6_sharing.html#what-can-often-be-shared",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "What Can Often Be Shared?",
+    "text": "What Can Often Be Shared?\nExamples:\n\nAnalysis scripts\nSimulated datasets\nMetadata\nAggregated outputs\nQuarto reports\nProtocols\nWorkflow documentation"
   },
   {
-    "objectID": "slides/1_welcome.html#different-schools-of-open-science",
-    "href": "slides/1_welcome.html#different-schools-of-open-science",
-    "title": "Welcome",
-    "section": "Different schools of open science",
-    "text": "Different schools of open science\n\n\n\n\n\n\n\n\n\nThe infrastructure school (better infrastructure -&gt;better science)\nThe public school (Science engage with society)\nThe measurement school (Alt. measures of impact )\nThe democratic school (knowledge free to all)\nThe pragmatic school (Openness improves efficiency and quality)\n\nSee Fecher and Friesike (2014)"
+    "objectID": "slides/6_sharing.html#metadata-matters",
+    "href": "slides/6_sharing.html#metadata-matters",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Metadata Matters",
+    "text": "Metadata Matters\nMetadata = data about data\nMetadata explains:\n\nWhere data came from\nSampling methods\nVariable definitions\nUnits\nCoordinate systems\nMissing values"
   },
   {
-    "objectID": "slides/1_welcome.html#topics-for-discussion",
-    "href": "slides/1_welcome.html#topics-for-discussion",
-    "title": "Welcome",
-    "section": "Topics for discussion",
-    "text": "Topics for discussion\n\n\n\n\n\n\n\nWhat do YOU associate with Open Science?\nHow do you think Open Science can improve your project?"
+    "objectID": "slides/6_sharing.html#metadata-example",
+    "href": "slides/6_sharing.html#metadata-example",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Metadata Example",
+    "text": "Metadata Example\nVariable: count\nDescription: Number of observed individuals\nUnit: individuals\nMissing values: NA = no observation recorded"
   },
   {
-    "objectID": "slides/1_welcome.html#the-reproduciblity-crisis",
-    "href": "slides/1_welcome.html#the-reproduciblity-crisis",
-    "title": "Welcome",
-    "section": "The reproduciblity crisis",
-    "text": "The reproduciblity crisis\n\n\n\n\n\n\n1,500 scientists lift the lid on reproducibility | Nature"
+    "objectID": "slides/6_sharing.html#fair-principles",
+    "href": "slides/6_sharing.html#fair-principles",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "FAIR Principles",
+    "text": "FAIR Principles\n(meta)Data should be:\n\nFindable\nAccessible\nInteroperable\nReusable"
   },
   {
-    "objectID": "slides/1_welcome.html#access-to-data",
-    "href": "slides/1_welcome.html#access-to-data",
-    "title": "Welcome",
-    "section": "Access to data",
-    "text": "Access to data"
+    "objectID": "slides/6_sharing.html#what-is-a-licence",
+    "href": "slides/6_sharing.html#what-is-a-licence",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "What Is a Licence?",
+    "text": "What Is a Licence?\nLicences explain reuse permissions\nWithout a licence:\n\nreuse becomes unclear\ncollaborators may hesitate\nlegal uncertainty increases"
   },
   {
-    "objectID": "slides/1_welcome.html#section",
-    "href": "slides/1_welcome.html#section",
-    "title": "Welcome",
-    "section": "",
-    "text": "When we publish scientific papers it is expected that data is shared (archived) publicly (so that other researchers can reuse the data)\nHowever, currently we often find that this is not happening\n\nSee e.g. Archmiller et al. (2020)"
+    "objectID": "slides/6_sharing.html#licences-clarify-expectations.",
+    "href": "slides/6_sharing.html#licences-clarify-expectations.",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Licences clarify expectations.",
+    "text": "Licences clarify expectations.\n\n\n\nLicence\nTypical use\n\n\n\n\nMIT\nOpen code licence\n\n\nGPL\nOpen-source/copyleft\n\n\nCC-BY\nReuse with attribution\n\n\nCC-BY-NC\nNon-commercial reuse"
   },
   {
-    "objectID": "slides/1_welcome.html#section-1",
-    "href": "slides/1_welcome.html#section-1",
-    "title": "Welcome",
-    "section": "",
-    "text": "See Mandeville et al. (2021) for details"
+    "objectID": "slides/6_sharing.html#sensitive-species-example",
+    "href": "slides/6_sharing.html#sensitive-species-example",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Sensitive Species Example",
+    "text": "Sensitive Species Example\nExample: endangered species locations\nPublishing exact coordinates may:\n\nIncrease poaching risk\nIncrease disturbance\nDamage vulnerable habitats"
   },
   {
-    "objectID": "slides/1_welcome.html#access-to-code",
-    "href": "slides/1_welcome.html#access-to-code",
-    "title": "Welcome",
-    "section": "Access to code",
-    "text": "Access to code\n\n\n\n\n\n\n\n\n\n\n\nWhen we publish scientific papers - we are expected to share (archive) R-code (or other code we are using to produce the reported results).\nAgain - there is room for improvement!\n\nSee e.g. Culina et al. (2020)"
+    "objectID": "slides/6_sharing.html#openness-can-be-flexible",
+    "href": "slides/6_sharing.html#openness-can-be-flexible",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Openness can be flexible",
+    "text": "Openness can be flexible\nPossible approaches:\n\nShare code only\nShare aggregated data\nBlur coordinates\nDelay data release\nUse controlled access"
   },
   {
-    "objectID": "slides/1_welcome.html#fair",
-    "href": "slides/1_welcome.html#fair",
-    "title": "Welcome",
-    "section": "FAIR!",
-    "text": "FAIR!\n\nSee Wilkinson et al. (2016)"
+    "objectID": "slides/6_sharing.html#where-can-data-and-code-be-shared",
+    "href": "slides/6_sharing.html#where-can-data-and-code-be-shared",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Where Can Data and Code Be Shared?",
+    "text": "Where Can Data and Code Be Shared?\nExamples:\n\nGitHub (code)\nZenodo\nOSF\nInstitutional repositories\nDryad"
   },
   {
-    "objectID": "slides/1_welcome.html#questionable-research-practices",
-    "href": "slides/1_welcome.html#questionable-research-practices",
-    "title": "Welcome",
-    "section": "Questionable Research Practices",
-    "text": "Questionable Research Practices\n\nSee Fraser et al. (2018) for details and further discussion!"
+    "objectID": "slides/6_sharing.html#good-sharing-checklist",
+    "href": "slides/6_sharing.html#good-sharing-checklist",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Good Sharing Checklist",
+    "text": "Good Sharing Checklist\n\nIs the workflow reproducible?\nIs metadata included?\nIs sensitive information removed?\nIs there a licence?\nWould another person understand this?"
   },
   {
-    "objectID": "slides/1_welcome.html#the-preregistration-revolution",
-    "href": "slides/1_welcome.html#the-preregistration-revolution",
-    "title": "Welcome",
-    "section": "The preregistration revolution!",
-    "text": "The preregistration revolution!\n\n\n\n\n\nSee Nosek et al. (2018)"
+    "objectID": "slides/6_sharing.html#today-we-covered",
+    "href": "slides/6_sharing.html#today-we-covered",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Today we covered",
+    "text": "Today we covered\n\nReproducible workflows\nGitHub\nQuarto\nCollaboration\nResponsible sharing"
   },
   {
-    "objectID": "slides/1_welcome.html#distinguish-between-exploratory-and-confirmatory-science",
-    "href": "slides/1_welcome.html#distinguish-between-exploratory-and-confirmatory-science",
-    "title": "Welcome",
-    "section": "Distinguish between exploratory and confirmatory science",
-    "text": "Distinguish between exploratory and confirmatory science\n\n\n\n\n\n\nSee Nilsen et al. (2020)"
+    "objectID": "slides/6_sharing.html#open-workflows-support",
+    "href": "slides/6_sharing.html#open-workflows-support",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Open workflows support",
+    "text": "Open workflows support\n\nTransparency\nSustainability\nCollaboration\nBetter science"
   },
   {
-    "objectID": "slides/1_welcome.html#open-science-is-just-as-much-about.",
-    "href": "slides/1_welcome.html#open-science-is-just-as-much-about.",
-    "title": "Welcome",
-    "section": "Open science is just as much about….",
-    "text": "Open science is just as much about…."
-  },
-  {
-    "objectID": "slides/1_welcome.html#references",
-    "href": "slides/1_welcome.html#references",
-    "title": "Welcome",
-    "section": "References",
-    "text": "References\n\n\n\n\nArchmiller, Althea A., Andrew D. Johnson, Jane Nolan, et al. 2020. “Computational Reproducibility in the Wildlife Society’s Flagship Journals.” The Journal of Wildlife Management 84 (5): 1012–17. https://doi.org/10.1002/jwmg.21855.\n\n\nCulina, Antica, Ilona van den Berg, Simon Evans, and Alfredo Sánchez-Tójar. 2020. “Low Availability of Code in Ecology: A Call for Urgent Action.” PLOS Biology 18 (7): 1–9. https://doi.org/10.1371/journal.pbio.3000763.\n\n\nFecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly Publishing, edited by Sönke Bartling and Sascha Friesike. Springer. https://doi.org/10.1007/978-3-319-00026-8_2.\n\n\nFraser, Hannah, Tim Parker, Shinichi Nakagawa, Ashley Barnett, and Fiona Fidler. 2018. “Questionable Research Practices in Ecology and Evolution.” PLOS ONE 13 (7): 1–16. https://doi.org/10.1371/journal.pone.0200303.\n\n\nMandeville, Caitlin P., Wouter Koch, Erlend B. Nilsen, and Anders G. Finstad. 2021. “Open Data Practices Among Users of Primary Biodiversity Data.” BioScience 71 (11): 1128–47. https://doi.org/10.1093/biosci/biab072.\n\n\nNilsen, Erlend B., Diana E. Bowler, and John D. C. Linnell. 2020. “Exploratory and Confirmatory Research in the Open Science Era.” Journal of Applied Ecology 57 (4): 842–47. https://doi.org/10.1111/1365-2664.13571.\n\n\nNosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. “The Preregistration Revolution.” Proceedings of the National Academy of Sciences 115 (11): 2600–2606. https://doi.org/10.1073/pnas.1708274114.\n\n\nWilkinson, Mark D., Michel Dumontier, I. J. J. Aalbersberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018. https://doi.org/10.1038/sdata.2016.18."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
-    "href": "slides/3_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
-    "title": "GitHub without fear",
-    "section": "Open workflows for ecology and wildlife research",
-    "text": "Open workflows for ecology and wildlife research\nTopics:\n\nRepositories\nCommits\nPush/pull\nREADME files\nCollaboration\nVersion control basics"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#learning-goals",
-    "href": "slides/3_github_without_fear.html#learning-goals",
-    "title": "GitHub without fear",
-    "section": "Learning Goals",
-    "text": "Learning Goals\nBy the end of this session you should be able to:\n\nUnderstand what Git and GitHub are\nCreate and clone repositories\nMake commits confidently\nPush and pull changes\nUnderstand basic collaboration workflows\nRecover from common mistakes\nUse GitHub in ecology research projects"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#what-problem-does-git-solve",
-    "href": "slides/3_github_without_fear.html#what-problem-does-git-solve",
-    "title": "GitHub without fear",
-    "section": "What Problem Does Git Solve?",
-    "text": "What Problem Does Git Solve?\nA familiar workflow problem\nanalysis_final.R\nanalysis_final_v2.R\nanalysis_final_v2_REAL.R\nanalysis_final_USE_THIS_ONE.R"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#common-issues",
-    "href": "slides/3_github_without_fear.html#common-issues",
-    "title": "GitHub without fear",
-    "section": "Common issues",
-    "text": "Common issues\n\nFiles overwritten\nUnsure what changed\nDifficult collaboration\nNo backup history\nImpossible to undo mistakes safely"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#git-is-not-github",
-    "href": "slides/3_github_without_fear.html#git-is-not-github",
-    "title": "GitHub without fear",
-    "section": "Git is not GitHub",
-    "text": "Git is not GitHub\nGit\n\nVersion control system\nTracks changes to files\nWorks locally on your computer\n\nGitHub\n\nOnline hosting platform for Git repositories\nCollaboration and sharing\nBackup and project management"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#version-control",
-    "href": "slides/3_github_without_fear.html#version-control",
-    "title": "GitHub without fear",
-    "section": "Version control",
-    "text": "Version control\nGit keeps a history of changes:\n\nWhat changed\nWhen it changed\nWho changed it\nWhy it changed"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#benefits",
-    "href": "slides/3_github_without_fear.html#benefits",
-    "title": "GitHub without fear",
-    "section": "Benefits",
-    "text": "Benefits\n\nUndo mistakes\nTrack project history\nCollaborate safely\nExperiment without fear"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#why-github-matters-in-ecology",
-    "href": "slides/3_github_without_fear.html#why-github-matters-in-ecology",
-    "title": "GitHub without fear",
-    "section": "Why GitHub Matters in Ecology",
-    "text": "Why GitHub Matters in Ecology"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#what-is-a-repository",
-    "href": "slides/3_github_without_fear.html#what-is-a-repository",
-    "title": "GitHub without fear",
-    "section": "What Is a Repository?",
-    "text": "What Is a Repository?"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#anatomy-of-a-repository",
-    "href": "slides/3_github_without_fear.html#anatomy-of-a-repository",
-    "title": "GitHub without fear",
-    "section": "Anatomy of a Repository",
-    "text": "Anatomy of a Repository\nExample repository structure\nwildlife_project/\n├── data_raw/\n├── data_processed/\n├── scripts/\n├── outputs/\n├── docs/\n├── README.md\n├── .gitignore\n└── wildlife_project.Rproj\nGit tracks changes inside the project."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#commits",
-    "href": "slides/3_github_without_fear.html#commits",
-    "title": "GitHub without fear",
-    "section": "Commits",
-    "text": "Commits\nCommits are snapshots\nA commit records:\n\nWhat changed\nWhen it changed\nA short explanation"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#good-commit-messages",
-    "href": "slides/3_github_without_fear.html#good-commit-messages",
-    "title": "GitHub without fear",
-    "section": "Good commit messages",
-    "text": "Good commit messages\nAdd cleaning script for camera trap data\nFix species names in processed dataset"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#bad-commit-messages",
-    "href": "slides/3_github_without_fear.html#bad-commit-messages",
-    "title": "GitHub without fear",
-    "section": "Bad commit messages",
-    "text": "Bad commit messages\nstuff\nasdfgh"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#important",
-    "href": "slides/3_github_without_fear.html#important",
-    "title": "GitHub without fear",
-    "section": "Important",
-    "text": "Important\nYou are always in control of what gets committed."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#push",
-    "href": "slides/3_github_without_fear.html#push",
-    "title": "GitHub without fear",
-    "section": "Push",
-    "text": "Push\nSend your local commits to GitHub."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#pull",
-    "href": "slides/3_github_without_fear.html#pull",
-    "title": "GitHub without fear",
-    "section": "Pull",
-    "text": "Pull\nDownload changes from GitHub."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#typical-workflow",
-    "href": "slides/3_github_without_fear.html#typical-workflow",
-    "title": "GitHub without fear",
-    "section": "Typical workflow",
-    "text": "Typical workflow\nPull\nWork\nCommit\nPush"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#many-ecology-projects-now-publish",
-    "href": "slides/3_github_without_fear.html#many-ecology-projects-now-publish",
-    "title": "GitHub without fear",
-    "section": "Many ecology projects now publish:",
-    "text": "Many ecology projects now publish:\n\nCode\nData\nReports\nWebsites"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#people-often-judge-projects-by-the-readme.",
-    "href": "slides/3_github_without_fear.html#people-often-judge-projects-by-the-readme.",
-    "title": "GitHub without fear",
-    "section": "People often judge projects by the README.",
-    "text": "People often judge projects by the README."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#keep-the-workflow-slow-and-visible.",
-    "href": "slides/3_github_without_fear.html#keep-the-workflow-slow-and-visible.",
-    "title": "GitHub without fear",
-    "section": "Keep the workflow slow and visible.",
-    "text": "Keep the workflow slow and visible."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#mistakes-are-normal.",
-    "href": "slides/3_github_without_fear.html#mistakes-are-normal.",
-    "title": "GitHub without fear",
-    "section": "Mistakes are normal.",
-    "text": "Mistakes are normal.\nEven experienced users regularly:\n\nCommit the wrong file\nMerge incorrectly\nForget to pull"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#today-we-focus-on",
-    "href": "slides/3_github_without_fear.html#today-we-focus-on",
-    "title": "GitHub without fear",
-    "section": "Today we focus on:",
-    "text": "Today we focus on:\n\nRepositories\nCommits\nPush/pull\nCollaboration basics"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#branches-come-later.",
-    "href": "slides/3_github_without_fear.html#branches-come-later.",
-    "title": "GitHub without fear",
-    "section": "Branches come later.",
-    "text": "Branches come later.\nYou do not need to master Git immediately."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#understanding-concepts-matters-more-than-memorising-commands.",
-    "href": "slides/3_github_without_fear.html#understanding-concepts-matters-more-than-memorising-commands.",
-    "title": "GitHub without fear",
-    "section": "Understanding concepts matters more than memorising commands.",
-    "text": "Understanding concepts matters more than memorising commands."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#these-are-normal-learning-experiences.",
-    "href": "slides/3_github_without_fear.html#these-are-normal-learning-experiences.",
-    "title": "GitHub without fear",
-    "section": "These are normal learning experiences.",
-    "text": "These are normal learning experiences."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#github-supports-reproducible-ecology.",
-    "href": "slides/3_github_without_fear.html#github-supports-reproducible-ecology.",
-    "title": "GitHub without fear",
-    "section": "GitHub supports reproducible ecology.",
-    "text": "GitHub supports reproducible ecology."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#this-improves-reuse-and-verification.",
-    "href": "slides/3_github_without_fear.html#this-improves-reuse-and-verification.",
-    "title": "GitHub without fear",
-    "section": "This improves reuse and verification.",
-    "text": "This improves reuse and verification."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#suggested-name",
-    "href": "slides/3_github_without_fear.html#suggested-name",
-    "title": "GitHub without fear",
-    "section": "Suggested name",
-    "text": "Suggested name\nwildlife-reproducibility-workshop"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#result",
-    "href": "slides/3_github_without_fear.html#result",
-    "title": "GitHub without fear",
-    "section": "Result",
-    "text": "Result\nYou now have:\n\nLocal repository\nGit tracking enabled\nGitHub connection established"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#observe-git-pane",
-    "href": "slides/3_github_without_fear.html#observe-git-pane",
-    "title": "GitHub without fear",
-    "section": "Observe Git pane",
-    "text": "Observe Git pane\nRStudio now shows changed files."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#refresh-github-page",
-    "href": "slides/3_github_without_fear.html#refresh-github-page",
-    "title": "GitHub without fear",
-    "section": "Refresh GitHub page",
-    "text": "Refresh GitHub page\nYour project is now online."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#important-habit",
-    "href": "slides/3_github_without_fear.html#important-habit",
-    "title": "GitHub without fear",
-    "section": "Important habit",
-    "text": "Important habit\nAlways pull before starting work."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#key-point",
-    "href": "slides/3_github_without_fear.html#key-point",
-    "title": "GitHub without fear",
-    "section": "Key point",
-    "text": "Key point\nGit prevents silent overwriting."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#widely-used-in-open-science.",
-    "href": "slides/3_github_without_fear.html#widely-used-in-open-science.",
-    "title": "GitHub without fear",
-    "section": "Widely used in open science.",
-    "text": "Widely used in open science."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#useful-for-ecology-projects-and-workshops.",
-    "href": "slides/3_github_without_fear.html#useful-for-ecology-projects-and-workshops.",
-    "title": "GitHub without fear",
-    "section": "Useful for ecology projects and workshops.",
-    "text": "Useful for ecology projects and workshops."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#small-habits-prevent-big-problems.",
-    "href": "slides/3_github_without_fear.html#small-habits-prevent-big-problems.",
-    "title": "GitHub without fear",
-    "section": "Small habits prevent big problems.",
-    "text": "Small habits prevent big problems."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#open-science-still-requires-responsible-sharing.",
-    "href": "slides/3_github_without_fear.html#open-science-still-requires-responsible-sharing.",
-    "title": "GitHub without fear",
-    "section": "Open science still requires responsible sharing.",
-    "text": "Open science still requires responsible sharing."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#you-do-not-need-to-master-everything-immediately.",
-    "href": "slides/3_github_without_fear.html#you-do-not-need-to-master-everything-immediately.",
-    "title": "GitHub without fear",
-    "section": "You do not need to master everything immediately.",
-    "text": "You do not need to master everything immediately."
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#your-first-fully-reproducible-github-project",
-    "href": "slides/3_github_without_fear.html#your-first-fully-reproducible-github-project",
-    "title": "GitHub without fear",
-    "section": "Your first fully reproducible GitHub project",
-    "text": "Your first fully reproducible GitHub project\nIncluding:\n\nRStudio project\nFolder structure\nScripts\nCommits\nCollaboration workflow"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#recommended-sequence",
-    "href": "slides/3_github_without_fear.html#recommended-sequence",
-    "title": "GitHub without fear",
-    "section": "Recommended sequence",
-    "text": "Recommended sequence\n\nCreate repository online\nClone into RStudio\nAdd files\nCommit\nPush\nEdit README\nPull changes\nShow history on GitHub"
-  },
-  {
-    "objectID": "slides/3_github_without_fear.html#emphasise-repeatedly",
-    "href": "slides/3_github_without_fear.html#emphasise-repeatedly",
-    "title": "GitHub without fear",
-    "section": "Emphasise repeatedly",
-    "text": "Emphasise repeatedly\n\nGitHub is a tool, not a judgement\nEveryone makes mistakes\nVersion control reduces stress\nCollaboration becomes safer\nReproducibility improves transparency\nOpen workflows help future-you"
+    "objectID": "slides/6_sharing.html#nordic-open-science-community",
+    "href": "slides/6_sharing.html#nordic-open-science-community",
+    "title": "Sharing Data and Code Responsibly",
+    "section": "Nordic Open Science Community",
+    "text": "Nordic Open Science Community"
   }
 ]
