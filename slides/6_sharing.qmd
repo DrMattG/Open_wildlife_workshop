@@ -1,0 +1,184 @@
+---
+title: "Sharing Data and Code Responsibly"
+editor: visual
+---
+
+Topics:
+
+- Licences
+- Metadata
+- FAIR principles
+- Sensitive ecological data
+- Ethical openness
+
+## Why share data and code?
+
+Sharing improves:
+
+- Transparency
+- Reproducibility
+- Reuse
+- Collaboration
+- Teaching
+- Scientific trust
+
+## Open science is not reckless openness
+
+Important question:
+
+> What *should* be open?
+
+Not everything can or should be shared publicly.
+
+## Ecological data can be sensitive
+
+Examples:
+
+- Nesting sites
+- Endangered species locations
+- Poaching risks
+- Disturbance-sensitive species
+- Indigenous/community knowledge
+- Personal information
+
+## Questions Before Sharing
+
+Before sharing ask:
+
+- Could sharing create ecological harm?
+- Are there legal restrictions?
+- Does consent apply?
+- Could data be misused?
+- Are sensitive locations included?
+
+## What Can Often Be Shared?
+
+Examples:
+
+- Analysis scripts
+- Simulated datasets
+- Metadata
+- Aggregated outputs
+- Quarto reports
+- Protocols
+- Workflow documentation
+
+## Metadata Matters
+
+Metadata = data about data
+
+Metadata explains:
+
+- Where data came from
+- Sampling methods
+- Variable definitions
+- Units
+- Coordinate systems
+- Missing values
+
+## Metadata Example
+
+``` text
+Variable: count
+Description: Number of observed individuals
+Unit: individuals
+Missing values: NA = no observation recorded
+```
+## FAIR Principles
+
+(meta)Data should be:
+
+- Findable
+- Accessible
+- Interoperable
+- Reusable
+
+## What Is a Licence?
+
+Licences explain reuse permissions
+
+Without a licence:
+
+- reuse becomes unclear
+- collaborators may hesitate
+- legal uncertainty increases
+
+## Licences clarify expectations.
+
+
+| Licence  | Typical use            |
+|----------|------------------------|
+| MIT      | Open code licence      |
+| GPL      | Open-source/copyleft   |
+| CC-BY    | Reuse with attribution |
+| CC-BY-NC | Non-commercial reuse   |
+
+
+## Sensitive Species Example
+
+Example: endangered species locations
+
+Publishing exact coordinates may:
+
+- Increase poaching risk
+- Increase disturbance
+- Damage vulnerable habitats
+
+## Openness can be flexible
+
+Possible approaches:
+
+- Share code only
+- Share aggregated data
+- Blur coordinates
+- Delay data release
+- Use controlled access
+
+## Where Can Data and Code Be Shared?
+
+Examples:
+
+- GitHub (code)
+- Zenodo
+- OSF
+- Institutional repositories
+- Dryad
+
+
+## Good Sharing Checklist
+
+- Is the workflow reproducible?
+- Is metadata included?
+- Is sensitive information removed?
+- Is there a licence?
+- Would another person understand this?
+
+## Today we covered
+
+- Reproducible workflows
+- GitHub
+- Quarto
+- Collaboration
+- Responsible sharing
+
+## Open workflows support
+
+- Transparency
+- Sustainability
+- Collaboration
+- Better science
+
+
+## Nordic Open Science Community
+
+# Stay connected
+
+Examples:
+
+- SORTEE
+- Open science communities
+- ESHackathon
+- GitHub organisations
+- Local peer support
+
+Small improvements compound over time.

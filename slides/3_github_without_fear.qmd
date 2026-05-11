@@ -17,9 +17,7 @@ Topics:
 - Commits
 - Push/pull
 - README files
-- Collaboration
 - Version control basics
-
 
 ## Learning Goals
 
@@ -29,15 +27,12 @@ Topics:
 - Create and clone repositories
 - Make commits confidently
 - Push and pull changes
-- Understand basic collaboration workflows
-- Recover from common mistakes
-- Use GitHub in ecology research projects
 
 ## What Problem Does Git Solve?
 
 *A familiar workflow problem*
 
-```text
+``` text
 analysis_final.R
 analysis_final_v2.R
 analysis_final_v2_REAL.R
@@ -84,7 +79,7 @@ Git keeps a history of changes:
 
 ## Why GitHub Matters in Ecology
 
-# Ecology projects are collaborative
+Ecology is collaborative
 
 Examples:
 
@@ -97,12 +92,12 @@ Examples:
 
 ## What Is a Repository?
 
-# Repository = project folder + history
+Repository = project folder + history
 
 A repository contains:
 
 - Code
-- Data
+- Data (although it shouldn't)
 - Documentation
 - Figures
 - Workflow history
@@ -110,25 +105,6 @@ A repository contains:
 Think of it as:
 
 A project folder with memory.
-
-## Anatomy of a Repository
-
-Example repository structure
-
-```text
-wildlife_project/
-├── data_raw/
-├── data_processed/
-├── scripts/
-├── outputs/
-├── docs/
-├── README.md
-├── .gitignore
-└── wildlife_project.Rproj
-```
-
-Git tracks changes inside the project.
-
 
 ## Commits
 
@@ -142,31 +118,27 @@ A commit records:
 
 ## Good commit messages
 
-```text
+``` text
 Add cleaning script for camera trap data
 ```
 
-```text
+``` text
 Fix species names in processed dataset
 ```
 
 ## Bad commit messages
 
-```text
+``` text
 stuff
 ```
 
-```text
+``` text
 asdfgh
 ```
 
----
+## A Helpful Mental Model
 
-# Slide 10 — A Helpful Mental Model
-
-# GitHub workflow
-
-```text
+``` text
 Edit files
     ↓
 Review changes
@@ -176,117 +148,39 @@ Commit changes
 Push to GitHub
 ```
 
-## Important
+## Push and Pull
 
-You are always in control of what gets committed.
-
----
-
-# Slide 11 — Push and Pull
-
-# Push and pull
-
-## Push
+*Push*
 
 Send your local commits to GitHub.
 
-## Pull
+*Pull*
 
 Download changes from GitHub.
 
 ## Typical workflow
 
-```text
+``` text
 Pull
 Work
 Commit
 Push
 ```
 
----
+------------------------------------------------------------------------
 
-# Slide 12 — GitHub as a Research Backup
-
-# GitHub is also useful for:
+## GitHub is useful for:
 
 - Backup
 - Project sharing
-- Collaboration
+- Collaboration (even with youself)
 - Public documentation
 - Teaching
 - Open science portfolios
 
-## Many ecology projects now publish:
+## Common Fear #1
 
-- Code
-- Data
-- Reports
-- Websites
-
----
-
-# Slide 13 — README Files Matter
-
-# The README is the front door
-
-A good `README.md` explains:
-
-- What the project is
-- Why it exists
-- How to run it
-- Folder structure
-- Dependencies
-- Contact information
-
-## People often judge projects by the README.
-
----
-
-# Slide 14 — Example README Structure
-
-# Example README
-
-```markdown
-# Wildlife Occupancy Project
-
-## Overview
-This project analyses camera trap data from Norway.
-
-## Project structure
-- data_raw/
-- scripts/
-- outputs/
-
-## How to run
-1. Run 01_clean_data.R
-2. Run 02_analysis.R
-
-## Contact
-Your Name
-```
-
----
-
-# Slide 15 — Live Demo Overview
-
-# Live demonstration
-
-Demonstrate:
-
-- Creating a repository
-- Connecting RStudio to GitHub
-- Making a commit
-- Pushing changes
-- Pulling updates
-- Viewing history
-
-## Keep the workflow slow and visible.
-
----
-
-# Slide 16 — Common Fear #1
-
-# “What if I break everything?”
+*“What if I break everything?”*
 
 Good news:
 
@@ -304,44 +198,31 @@ Even experienced users regularly:
 - Merge incorrectly
 - Forget to pull
 
----
+## Common Fear #2
 
-# Slide 17 — Common Fear #2
-
-# “I don’t understand branches”
+“I don’t understand branches”
 
 That is okay.
 
-## Today we focus on:
-
-- Repositories
-- Commits
-- Push/pull
-- Collaboration basics
-
-## Branches come later.
+Branches come later...
 
 You do not need to master Git immediately.
 
----
+## Common Fear #3
 
-# Slide 18 — Common Fear #3
+“The terminal is scary”
 
-# “The terminal is scary”
-
-You can do a lot using:
+Yes it is! You can do a lot using:
 
 - RStudio Git pane
 - GitHub Desktop
 - VS Code interfaces
 
-## Understanding concepts matters more than memorising commands.
+Understanding concepts matters more than memorising commands.
 
----
+## Common Mistakes
 
-# Slide 19 — Common Mistakes
-
-# Common beginner mistakes
+*Common "beginner" mistakes*
 
 - Forgetting to commit
 - Committing large files
@@ -349,87 +230,39 @@ You can do a lot using:
 - Conflicts after forgetting to pull
 - Uploading sensitive data
 
-## These are normal learning experiences.
-
----
-
-# Slide 20 — Ecology Example
-
-# Example ecology repository
-
-Possible repository contents:
-
-- Occupancy modelling scripts
-- Camera trap metadata
-- Quarto reports
-- Species distribution models
-- Meta-analysis workflows
-- Monitoring dashboards
-
-## GitHub supports reproducible ecology.
-
----
-
-# Slide 21 — Example from Open Science
-
-# Open workflows increase transparency
-
-Examples of materials often shared:
-
-- Analysis scripts
-- Supplementary figures
-- Data dictionaries
-- Quarto reports
-- Protocols
-- Teaching materials
-
-## This improves reuse and verification.
-
----
-
-# Slide 22 — Hands-on Activity
-
-# Guided practice
+## Guided practice
 
 You will:
 
-1. Create a GitHub repository
-2. Connect it to RStudio
-3. Add your reproducible project
-4. Commit changes
-5. Push to GitHub
-6. Edit README
-7. Pull updates
+1.  Create a GitHub repository
+2.  Connect it to RStudio
+3.  Add your reproducible project
+4.  Commit changes
+5.  Push to GitHub
+6.  Edit README
+7.  Pull updates
 
----
-
-# Slide 23 — Step 1
-
-# Create a GitHub repository
+## Create a GitHub repository
 
 On GitHub:
 
-1. Click “New repository”
-2. Choose a repository name
-3. Add a README
-4. Set visibility
-5. Create repository
+1.  Click “New repository”
+2.  Choose a repository name
+3.  Add a README
+4.  Set visibility
+5.  Create repository
 
-## Suggested name
+Suggested name:
 
-```text
+``` text
 wildlife-reproducibility-workshop
 ```
 
----
-
-# Slide 24 — Step 2
-
-# Clone repository into RStudio
+## "Clone" repository into RStudio
 
 In RStudio:
 
-```text
+``` text
 File → New Project → Version Control → Git
 ```
 
@@ -443,11 +276,7 @@ You now have:
 - Git tracking enabled
 - GitHub connection established
 
----
-
-# Slide 25 — Step 3
-
-# Add project files
+## Add project files
 
 Copy into the repository:
 
@@ -460,33 +289,25 @@ Copy into the repository:
 
 RStudio now shows changed files.
 
----
-
-# Slide 26 — Step 4
-
-# Make your first commit
+## Make your first commit
 
 In Git pane:
 
-1. Tick changed files
-2. Click “Commit”
-3. Write message
+1.  Tick changed files
+2.  Click “Commit”
+3.  Write message
 
 Example:
 
-```text
+``` text
 Add initial project structure and scripts
 ```
 
----
-
-# Slide 27 — Step 5
-
-# Push to GitHub
+## Push to GitHub
 
 Click:
 
-```text
+``` text
 Push
 ```
 
@@ -494,11 +315,7 @@ Push
 
 Your project is now online.
 
----
-
-# Slide 28 — Step 6
-
-# Edit the README
+## Edit the README
 
 Add:
 
@@ -509,88 +326,13 @@ Add:
 
 Commit and push changes.
 
----
+## Important habits
 
-# Slide 29 — Step 7
-
-# Pull updates
-
-Demonstrate:
-
-- Editing on GitHub
-- Pulling changes into RStudio
-
-## Important habit
-
-Always pull before starting work.
-
----
-
-# Slide 30 — What Happens When Two People Edit?
-
-# Collaboration example
-
-Possible scenario:
-
-- Two people edit same file
-- Git detects conflict
-- Conflict must be resolved
-
-## Key point
-
-Git prevents silent overwriting.
-
----
-
-# Slide 31 — GitHub for Research Collaboration
-
-# Collaboration workflows
-
-GitHub supports:
-
-- Shared repositories
-- Issues
-- Pull requests
-- Code review
-- Documentation
-- Teaching
-
-## Widely used in open science.
-
----
-
-# Slide 32 — GitHub Pages
-
-# GitHub can also host:
-
-- Websites
-- Quarto reports
-- Documentation
-- Teaching materials
-- Dashboards
-
-## Useful for ecology projects and workshops.
-
----
-
-# Slide 33 — Good Habits
-
-# Good GitHub habits
+- Always pull before starting work.
 
 - Commit often
-- Write meaningful commit messages
-- Pull before work
-- Keep projects organised
-- Use README files
-- Avoid large unnecessary files
 
-## Small habits prevent big problems.
-
----
-
-# Slide 34 — What Not to Upload
-
-# Be careful with:
+## Be careful with:
 
 - Sensitive species locations
 - Confidential data
@@ -598,97 +340,10 @@ GitHub supports:
 - Large raw files
 - Passwords/API keys
 
-## Open science still requires responsible sharing.
+## Useful Links
 
----
+- [Happy Git with R](https://happygitwithr.com/)
 
-# Slide 35 — Key Takeaways
+- [Software Carpentry Git lesson](https://swcarpentry.github.io/git-novice/)
 
-# Key messages
-
-- Git tracks changes safely
-- GitHub supports collaboration
-- Commits are snapshots
-- Repositories organise projects
-- README files matter
-- Mistakes are normal
-
-## You do not need to master everything immediately.
-
----
-
-# Slide 36 — Transition to Lunch Exercise
-
-# After lunch
-
-You will build:
-
-## Your first fully reproducible GitHub project
-
-Including:
-
-- RStudio project
-- Folder structure
-- Scripts
-- Commits
-- Collaboration workflow
-
----
-
-# Suggested Live Demo Flow
-
-## Recommended sequence
-
-1. Create repository online
-2. Clone into RStudio
-3. Add files
-4. Commit
-5. Push
-6. Edit README
-7. Pull changes
-8. Show history on GitHub
-
----
-
-# Suggested Instructor Talking Points
-
-## Emphasise repeatedly
-
-- GitHub is a tool, not a judgement
-- Everyone makes mistakes
-- Version control reduces stress
-- Collaboration becomes safer
-- Reproducibility improves transparency
-- Open workflows help future-you
-
----
-
-# Suggested Ecology Examples
-
-- Camera trap workflows
-- Occupancy models
-- Meta-analysis repositories
-- Long-term monitoring
-- Conservation dashboards
-- Quarto reports
-- Workshop materials
-
----
-
-# Useful Links
-
-- Happy Git with R  
-  https://happygitwithr.com/
-
-- GitHub Skills  
-  https://skills.github.com/
-
-- Quarto  
-  https://quarto.org/
-
-- The Turing Way  
-  https://the-turing-way.netlify.app/
-
-- Software Carpentry Git lesson  
-  https://swcarpentry.github.io/git-novice/
-
+- [Oh Shit, Git!?!](https://ohshitgit.com/)

@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
-  <title>Open Wildlife Workshop – GitHub without fear</title>
+  <title>Open Wildlife Workshop – Sharing Data and Code Responsibly</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -97,7 +97,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-b5231298e24bf61ce18e9358c9f8c47f.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -195,327 +195,223 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">GitHub without fear</h1>
-  <p class="subtitle">(or an Appropriate Amount of Fear!)</p>
+  <h1 class="title">Sharing Data and Code Responsibly</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="open-workflows-for-ecology-and-wildlife-research" class="slide level2">
-<h2>Open workflows for ecology and wildlife research</h2>
+<section class="slide level2">
+
 <p>Topics:</p>
 <ul>
-<li>Repositories</li>
-<li>Commits</li>
-<li>Push/pull</li>
-<li>README files</li>
-<li>Version control basics</li>
+<li>Licences</li>
+<li>Metadata</li>
+<li>FAIR principles</li>
+<li>Sensitive ecological data</li>
+<li>Ethical openness</li>
 </ul>
 </section>
-<section id="learning-goals" class="slide level2">
-<h2>Learning Goals</h2>
-<p><em>By the end of this session you should be able to:</em></p>
+<section id="why-share-data-and-code" class="slide level2">
+<h2>Why share data and code?</h2>
+<p>Sharing improves:</p>
 <ul>
-<li>Understand what Git and GitHub are</li>
-<li>Create and clone repositories</li>
-<li>Make commits confidently</li>
-<li>Push and pull changes</li>
+<li>Transparency</li>
+<li>Reproducibility</li>
+<li>Reuse</li>
+<li>Collaboration</li>
+<li>Teaching</li>
+<li>Scientific trust</li>
 </ul>
 </section>
-<section id="what-problem-does-git-solve" class="slide level2">
-<h2>What Problem Does Git Solve?</h2>
-<p><em>A familiar workflow problem</em></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>analysis_final.R</span>
-<span id="cb1-2"><a></a>analysis_final_v2.R</span>
-<span id="cb1-3"><a></a>analysis_final_v2_REAL.R</span>
-<span id="cb1-4"><a></a>analysis_final_USE_THIS_ONE.R</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="open-science-is-not-reckless-openness" class="slide level2">
+<h2>Open science is not reckless openness</h2>
+<p>Important question:</p>
+<blockquote>
+<p>What <em>should</em> be open?</p>
+</blockquote>
+<p>Not everything can or should be shared publicly.</p>
 </section>
-<section id="common-issues" class="slide level2">
-<h2>Common issues</h2>
-<ul>
-<li>Files overwritten</li>
-<li>Unsure what changed</li>
-<li>Difficult collaboration</li>
-<li>No backup history</li>
-<li>Impossible to undo mistakes safely</li>
-</ul>
-</section>
-<section id="git-is-not-github" class="slide level2">
-<h2>Git is not GitHub</h2>
-<p>Git</p>
-<ul>
-<li>Version control system</li>
-<li>Tracks changes to files</li>
-<li>Works locally on your computer</li>
-</ul>
-<p>GitHub</p>
-<ul>
-<li>Online hosting platform for Git repositories</li>
-<li>Collaboration and sharing</li>
-<li>Backup and project management</li>
-</ul>
-</section>
-<section id="version-control" class="slide level2">
-<h2>Version control</h2>
-<p>Git keeps a history of changes:</p>
-<ul>
-<li>What changed</li>
-<li>When it changed</li>
-<li>Who changed it</li>
-<li>Why it changed</li>
-</ul>
-</section>
-<section id="benefits" class="slide level2">
-<h2>Benefits</h2>
-<ul>
-<li>Undo mistakes</li>
-<li>Track project history</li>
-<li>Collaborate safely</li>
-<li>Experiment without fear</li>
-</ul>
-</section>
-<section id="why-github-matters-in-ecology" class="slide level2">
-<h2>Why GitHub Matters in Ecology</h2>
-<p>Ecology is collaborative</p>
+<section id="ecological-data-can-be-sensitive" class="slide level2">
+<h2>Ecological data can be sensitive</h2>
 <p>Examples:</p>
 <ul>
-<li>Multi-author papers</li>
-<li>Monitoring projects</li>
-<li>Shared codebases</li>
-<li>Long-term projects</li>
-<li>Student supervision</li>
-<li>Evidence synthesis workflows</li>
-</ul>
-</section>
-<section id="what-is-a-repository" class="slide level2">
-<h2>What Is a Repository?</h2>
-<p>Repository = project folder + history</p>
-<p>A repository contains:</p>
-<ul>
-<li>Code</li>
-<li>Data (although it shouldn’t)</li>
-<li>Documentation</li>
-<li>Figures</li>
-<li>Workflow history</li>
-</ul>
-<p>Think of it as:</p>
-<p>A project folder with memory.</p>
-</section>
-<section id="commits" class="slide level2">
-<h2>Commits</h2>
-<p><em>Commits are snapshots</em></p>
-<p>A commit records:</p>
-<ul>
-<li>What changed</li>
-<li>When it changed</li>
-<li>A short explanation</li>
-</ul>
-</section>
-<section id="good-commit-messages" class="slide level2">
-<h2>Good commit messages</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>Add cleaning script for camera trap data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>Fix species names in processed dataset</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="bad-commit-messages" class="slide level2">
-<h2>Bad commit messages</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a></a>stuff</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a></a>asdfgh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="a-helpful-mental-model" class="slide level2">
-<h2>A Helpful Mental Model</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a></a>Edit files</span>
-<span id="cb6-2"><a></a>    ↓</span>
-<span id="cb6-3"><a></a>Review changes</span>
-<span id="cb6-4"><a></a>    ↓</span>
-<span id="cb6-5"><a></a>Commit changes</span>
-<span id="cb6-6"><a></a>    ↓</span>
-<span id="cb6-7"><a></a>Push to GitHub</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="push-and-pull" class="slide level2">
-<h2>Push and Pull</h2>
-<p><em>Push</em></p>
-<p>Send your local commits to GitHub.</p>
-<p><em>Pull</em></p>
-<p>Download changes from GitHub.</p>
-</section>
-<section id="typical-workflow" class="slide level2">
-<h2>Typical workflow</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a></a>Pull</span>
-<span id="cb7-2"><a></a>Work</span>
-<span id="cb7-3"><a></a>Commit</span>
-<span id="cb7-4"><a></a>Push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="github-is-useful-for" class="slide level2">
-<h2>GitHub is useful for:</h2>
-<ul>
-<li>Backup</li>
-<li>Project sharing</li>
-<li>Collaboration (even with youself)</li>
-<li>Public documentation</li>
-<li>Teaching</li>
-<li>Open science portfolios</li>
-</ul>
-</section>
-<section id="common-fear-1" class="slide level2">
-<h2>Common Fear #1</h2>
-<p><em>“What if I break everything?”</em></p>
-<p>Good news:</p>
-<p>Git is designed to:</p>
-<ul>
-<li>Track changes</li>
-<li>Recover mistakes</li>
-<li>Restore earlier versions</li>
-</ul>
-</section>
-<section id="mistakes-are-normal." class="slide level2">
-<h2>Mistakes are normal.</h2>
-<p>Even experienced users regularly:</p>
-<ul>
-<li>Commit the wrong file</li>
-<li>Merge incorrectly</li>
-<li>Forget to pull</li>
-</ul>
-</section>
-<section id="common-fear-2" class="slide level2">
-<h2>Common Fear #2</h2>
-<p>“I don’t understand branches”</p>
-<p>That is okay.</p>
-<p>Branches come later…</p>
-<p>You do not need to master Git immediately.</p>
-</section>
-<section id="common-fear-3" class="slide level2">
-<h2>Common Fear #3</h2>
-<p>“The terminal is scary”</p>
-<p>Yes it is! You can do a lot using:</p>
-<ul>
-<li>RStudio Git pane</li>
-<li>GitHub Desktop</li>
-<li>VS Code interfaces</li>
-</ul>
-<p>Understanding concepts matters more than memorising commands.</p>
-</section>
-<section id="common-mistakes" class="slide level2">
-<h2>Common Mistakes</h2>
-<p><em>Common “beginner” mistakes</em></p>
-<ul>
-<li>Forgetting to commit</li>
-<li>Committing large files</li>
-<li>Editing directly on GitHub accidentally</li>
-<li>Conflicts after forgetting to pull</li>
-<li>Uploading sensitive data</li>
-</ul>
-</section>
-<section id="guided-practice" class="slide level2">
-<h2>Guided practice</h2>
-<p>You will:</p>
-<ol type="1">
-<li>Create a GitHub repository</li>
-<li>Connect it to RStudio</li>
-<li>Add your reproducible project</li>
-<li>Commit changes</li>
-<li>Push to GitHub</li>
-<li>Edit README</li>
-<li>Pull updates</li>
-</ol>
-</section>
-<section id="create-a-github-repository" class="slide level2">
-<h2>Create a GitHub repository</h2>
-<p>On GitHub:</p>
-<ol type="1">
-<li>Click “New repository”</li>
-<li>Choose a repository name</li>
-<li>Add a README</li>
-<li>Set visibility</li>
-<li>Create repository</li>
-</ol>
-<p>Suggested name:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a></a>wildlife-reproducibility-workshop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="clone-repository-into-rstudio" class="slide level2">
-<h2>“Clone” repository into RStudio</h2>
-<p>In RStudio:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a></a>File → New Project → Version Control → Git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Paste repository URL.</p>
-</section>
-<section id="result" class="slide level2">
-<h2>Result</h2>
-<p>You now have:</p>
-<ul>
-<li>Local repository</li>
-<li>Git tracking enabled</li>
-<li>GitHub connection established</li>
-</ul>
-</section>
-<section id="add-project-files" class="slide level2">
-<h2>Add project files</h2>
-<p>Copy into the repository:</p>
-<ul>
-<li>data_raw/</li>
-<li>scripts/</li>
-<li>outputs/</li>
-<li>README.md</li>
-</ul>
-</section>
-<section id="observe-git-pane" class="slide level2">
-<h2>Observe Git pane</h2>
-<p>RStudio now shows changed files.</p>
-</section>
-<section id="make-your-first-commit" class="slide level2">
-<h2>Make your first commit</h2>
-<p>In Git pane:</p>
-<ol type="1">
-<li>Tick changed files</li>
-<li>Click “Commit”</li>
-<li>Write message</li>
-</ol>
-<p>Example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a></a>Add initial project structure and scripts</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="push-to-github" class="slide level2">
-<h2>Push to GitHub</h2>
-<p>Click:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a></a>Push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="refresh-github-page" class="slide level2">
-<h2>Refresh GitHub page</h2>
-<p>Your project is now online.</p>
-</section>
-<section id="edit-the-readme" class="slide level2">
-<h2>Edit the README</h2>
-<p>Add:</p>
-<ul>
-<li>Project description</li>
-<li>Your name</li>
-<li>Workshop details</li>
-<li>Folder explanation</li>
-</ul>
-<p>Commit and push changes.</p>
-</section>
-<section id="important-habits" class="slide level2">
-<h2>Important habits</h2>
-<ul>
-<li><p>Always pull before starting work.</p></li>
-<li><p>Commit often</p></li>
-</ul>
-</section>
-<section id="be-careful-with" class="slide level2">
-<h2>Be careful with:</h2>
-<ul>
-<li>Sensitive species locations</li>
-<li>Confidential data</li>
+<li>Nesting sites</li>
+<li>Endangered species locations</li>
+<li>Poaching risks</li>
+<li>Disturbance-sensitive species</li>
+<li>Indigenous/community knowledge</li>
 <li>Personal information</li>
-<li>Large raw files</li>
-<li>Passwords/API keys</li>
 </ul>
 </section>
-<section id="useful-links" class="slide level2">
-<h2>Useful Links</h2>
+<section id="questions-before-sharing" class="slide level2">
+<h2>Questions Before Sharing</h2>
+<p>Before sharing ask:</p>
 <ul>
-<li><p><a href="https://happygitwithr.com/">Happy Git with R</a></p></li>
-<li><p><a href="https://swcarpentry.github.io/git-novice/">Software Carpentry Git lesson</a></p></li>
-<li><p><a href="https://ohshitgit.com/">Oh Shit, Git!?!</a></p></li>
+<li>Could sharing create ecological harm?</li>
+<li>Are there legal restrictions?</li>
+<li>Does consent apply?</li>
+<li>Could data be misused?</li>
+<li>Are sensitive locations included?</li>
 </ul>
+</section>
+<section id="what-can-often-be-shared" class="slide level2">
+<h2>What Can Often Be Shared?</h2>
+<p>Examples:</p>
+<ul>
+<li>Analysis scripts</li>
+<li>Simulated datasets</li>
+<li>Metadata</li>
+<li>Aggregated outputs</li>
+<li>Quarto reports</li>
+<li>Protocols</li>
+<li>Workflow documentation</li>
+</ul>
+</section>
+<section id="metadata-matters" class="slide level2">
+<h2>Metadata Matters</h2>
+<p>Metadata = data about data</p>
+<p>Metadata explains:</p>
+<ul>
+<li>Where data came from</li>
+<li>Sampling methods</li>
+<li>Variable definitions</li>
+<li>Units</li>
+<li>Coordinate systems</li>
+<li>Missing values</li>
+</ul>
+</section>
+<section id="metadata-example" class="slide level2">
+<h2>Metadata Example</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>Variable: count</span>
+<span id="cb1-2"><a></a>Description: Number of observed individuals</span>
+<span id="cb1-3"><a></a>Unit: individuals</span>
+<span id="cb1-4"><a></a>Missing values: NA = no observation recorded</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="fair-principles" class="slide level2">
+<h2>FAIR Principles</h2>
+<p>(meta)Data should be:</p>
+<ul>
+<li>Findable</li>
+<li>Accessible</li>
+<li>Interoperable</li>
+<li>Reusable</li>
+</ul>
+</section>
+<section id="what-is-a-licence" class="slide level2">
+<h2>What Is a Licence?</h2>
+<p>Licences explain reuse permissions</p>
+<p>Without a licence:</p>
+<ul>
+<li>reuse becomes unclear</li>
+<li>collaborators may hesitate</li>
+<li>legal uncertainty increases</li>
+</ul>
+</section>
+<section id="licences-clarify-expectations." class="slide level2">
+<h2>Licences clarify expectations.</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Licence</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MIT</td>
+<td>Open code licence</td>
+</tr>
+<tr class="even">
+<td>GPL</td>
+<td>Open-source/copyleft</td>
+</tr>
+<tr class="odd">
+<td>CC-BY</td>
+<td>Reuse with attribution</td>
+</tr>
+<tr class="even">
+<td>CC-BY-NC</td>
+<td>Non-commercial reuse</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensitive-species-example" class="slide level2">
+<h2>Sensitive Species Example</h2>
+<p>Example: endangered species locations</p>
+<p>Publishing exact coordinates may:</p>
+<ul>
+<li>Increase poaching risk</li>
+<li>Increase disturbance</li>
+<li>Damage vulnerable habitats</li>
+</ul>
+</section>
+<section id="openness-can-be-flexible" class="slide level2">
+<h2>Openness can be flexible</h2>
+<p>Possible approaches:</p>
+<ul>
+<li>Share code only</li>
+<li>Share aggregated data</li>
+<li>Blur coordinates</li>
+<li>Delay data release</li>
+<li>Use controlled access</li>
+</ul>
+</section>
+<section id="where-can-data-and-code-be-shared" class="slide level2">
+<h2>Where Can Data and Code Be Shared?</h2>
+<p>Examples:</p>
+<ul>
+<li>GitHub (code)</li>
+<li>Zenodo</li>
+<li>OSF</li>
+<li>Institutional repositories</li>
+<li>Dryad</li>
+</ul>
+</section>
+<section id="good-sharing-checklist" class="slide level2">
+<h2>Good Sharing Checklist</h2>
+<ul>
+<li>Is the workflow reproducible?</li>
+<li>Is metadata included?</li>
+<li>Is sensitive information removed?</li>
+<li>Is there a licence?</li>
+<li>Would another person understand this?</li>
+</ul>
+</section>
+<section id="today-we-covered" class="slide level2">
+<h2>Today we covered</h2>
+<ul>
+<li>Reproducible workflows</li>
+<li>GitHub</li>
+<li>Quarto</li>
+<li>Collaboration</li>
+<li>Responsible sharing</li>
+</ul>
+</section>
+<section id="open-workflows-support" class="slide level2">
+<h2>Open workflows support</h2>
+<ul>
+<li>Transparency</li>
+<li>Sustainability</li>
+<li>Collaboration</li>
+<li>Better science</li>
+</ul>
+</section>
+<section id="nordic-open-science-community" class="slide level2">
+<h2>Nordic Open Science Community</h2>
+</section>
+<section id="stay-connected" class="title-slide slide level1 center">
+<h1>Stay connected</h1>
+<p>Examples:</p>
+<ul>
+<li>SORTEE</li>
+<li>Open science communities</li>
+<li>ESHackathon</li>
+<li>GitHub organisations</li>
+<li>Local peer support</li>
+</ul>
+<p>Small improvements compound over time.</p>
 
 
 </section>
