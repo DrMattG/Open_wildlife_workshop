@@ -14,3 +14,5 @@ editor: visual
 - [Quarto reports](slides/4_quarto_reports.html)
 - [Collaboration](slides/5_collaboration.html)
 - [Sharing data & code](slides/6_sharing.html)
+
+![](slides/images/NKV_logo_02.png){fig-align="center"}
