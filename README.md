@@ -6,10 +6,10 @@
 
 ### Schedule
 
-Timings may change on the day due to participants needs and the timing of the canteen
+Timings may change on the day due to participants needs and the timing of the canteen. We can test merge conflickt
 
 | Time | Session | Focus |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **08:30–09:00** | Coffee! | Waking up |
 | 09:00–09:15 | Welcome + why open workflows matter | Transparency, reproducibility, collaboration, examples from ecology |
 | 09:15–10:00 | What is a reproducible research project? | Folder structure, raw vs processed data, scripts, documentation |
