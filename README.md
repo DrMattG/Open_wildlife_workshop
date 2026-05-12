@@ -6,7 +6,7 @@
 
 ### Schedule
 
-Timings may change on the day due to participants needs and the timing of the canteen. We can test merge conflickt
+Timings may change on the day due to participants needs and the timing of the canteen. Let's make a merge conflict. 
 
 
 | Time | Session | Focus |
