@@ -6,7 +6,7 @@
 
 ### Schedule
 
-Timings may change on the day due to participants needs and the timing of the canteen
+Timings may change on the day due to participants needs
 
 | Time | Session | Focus |
 |----|----|----|
