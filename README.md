@@ -8,6 +8,7 @@
 
 Timings may change on the day due to participants needs and the timing of the canteen. We can test merge conflickt
 
+
 | Time | Session | Focus |
 |------------------------|------------------------|------------------------|
 | **08:30–09:00** | Coffee! | Waking up |
